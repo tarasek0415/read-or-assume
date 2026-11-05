@@ -1,0 +1,29 @@
+{
+ "text": "Event 9 has the goalkeeper (P368) taking a corner at 120.0,0.1, which is inconsistent, so it matches the keeper_corner corruption.\n\nThe goalkeeper does appear elsewhere in his own half, at events 21\u201323 (around 9.7,53.9) and at events 30\u201332 (around 15.1,22.8). That confirms he is the keeper, so a corner at the far end of the pitch is out of place.\n\n{\"corrupt\": \"yes\", \"index\": 9, \"type\": \"keeper_corner\"}",
+ "usage": {
+  "prompt_tokens": 2543,
+  "completion_tokens": 174,
+  "total_tokens": 2717,
+  "cost": 0.013652,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.013652,
+   "upstream_inference_prompt_cost": 0.010172,
+   "upstream_inference_completions_cost": 0.00348
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_161",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

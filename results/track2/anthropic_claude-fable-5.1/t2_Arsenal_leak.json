@@ -1,0 +1,29 @@
+{
+ "text": "Team K has strong possession (57.6%), high shots, very low xG against (0.88), slightly above average pressing. In 2015/16 Premier League, Leicester won but with low possession (~44%). Arsenal had high possession, best defense by xG, strong shot numbers. Tottenham had high pressing (low PPDA ~9-10) and high possession too; their PPDA would be much lower than 14.6. Man City had high possession and shots but conceded more. Arsenal fits: possession ~56-58%, xGA lowest, moderate pressing.\n\n{\"team\": \"Arsenal\"}",
+ "usage": {
+  "prompt_tokens": 294,
+  "completion_tokens": 195,
+  "total_tokens": 489,
+  "cost": 0.01269,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.01269,
+   "upstream_inference_prompt_cost": 0.00294,
+   "upstream_inference_completions_cost": 0.00975
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t2_Arsenal_leak",
+ "model": "anthropic/claude-fable-5.1",
+ "track": 2
+}

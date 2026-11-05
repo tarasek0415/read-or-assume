@@ -1,0 +1,29 @@
+{
+ "text": "Profile: central defender with low passing volume (25.74 passes/90) and low progressive passing, high clearances, moderate aerials \u2014 suggests a defender at a lower-possession team. 1881 minutes \u2248 21 games. Average position centrally (y\u224852). Low pass volume typical of teams like Watford, West Brom, Sunderland, Norwich, Aston Villa.\n\nCandidates with ~21 appearances: Sebastien Bassong (Norwich, ~20 apps), Jonny Evans (West Brom, ~26), Ryan Bennett (Norwich), Kaboul (Sunderland, ~21), Ciaran Clark (Villa, ~24), Craig Cathcart (Watford, ~29 too many), Lescott (Villa, ~30). Kaboul played 21 games for Sunderland in 2015/16 (~1800 min). Bassong 20 apps.\n\n{\"player\": \"Younes Kaboul\", \"team\": \"Sunderland\"}",
+ "usage": {
+  "prompt_tokens": 277,
+  "completion_tokens": 326,
+  "total_tokens": 603,
+  "cost": 0.01907,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.01907,
+   "upstream_inference_prompt_cost": 0.00277,
+   "upstream_inference_completions_cost": 0.0163
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t1_P111_leak",
+ "model": "anthropic/claude-fable-5.1",
+ "track": 1
+}

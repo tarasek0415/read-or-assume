@@ -1,0 +1,29 @@
+{
+ "text": "Event 16 is the corrupted one. It is a pass from 56.0,4.4 to -9.0,15.2, but the next receipt (event 17) is at 53.3,15.2, so the end point should be about 53.3,15.2. The x-coordinate of -9.0 is also off the pitch.\n\nThe listed pass is about 65.9 units long and takes only 0.5 seconds, which is far too fast for a pass that distance. That fits the fast_long_pass corruption type.\n\n{\"corrupt\": \"yes\", \"index\": 16, \"type\": \"fast_long_pass\"}",
+ "usage": {
+  "prompt_tokens": 2589,
+  "completion_tokens": 188,
+  "total_tokens": 2777,
+  "cost": 0.014116,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.014116,
+   "upstream_inference_prompt_cost": 0.010356,
+   "upstream_inference_completions_cost": 0.00376
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_158",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

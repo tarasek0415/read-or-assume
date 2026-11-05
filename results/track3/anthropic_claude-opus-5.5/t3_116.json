@@ -1,0 +1,29 @@
+{
+ "text": "Event 14 is the corrupted one. It records a \"Goal Conceded\" by Team A's goalkeeper at 36:41, but there is no shot from Team B in the sequence. Team B's P503 carries the ball forward (event 13), then P022 receives and passes (events 16\u201318), and play simply continues after it. A goal with no shot fits the goal_no_shot corruption type.\n\n{\"corrupt\":\"yes\",\"index\":14,\"type\":\"goal_no_shot\"}",
+ "usage": {
+  "prompt_tokens": 2562,
+  "completion_tokens": 155,
+  "total_tokens": 2717,
+  "cost": 0.013348,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.013348,
+   "upstream_inference_prompt_cost": 0.010248,
+   "upstream_inference_completions_cost": 0.0031
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_116",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

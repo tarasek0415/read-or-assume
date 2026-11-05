@@ -1,0 +1,29 @@
+{
+ "text": "Event 15 is the corrupted one. P119 passes from 33.0,14.7 to 98.0,4.9, a distance of about 65 m, with a duration of only 0.5 s. That is implausibly fast for a ground pass.\n\nThe next event confirms it. The ball receipt at event 17 is at 42.8,4.9, not at the pass's end point, so the end location was altered. This matches the fast_long_pass corruption type.\n\n{\"corrupt\":\"yes\",\"index\":15,\"type\":\"fast_long_pass\"}",
+ "usage": {
+  "prompt_tokens": 2605,
+  "completion_tokens": 171,
+  "total_tokens": 2776,
+  "cost": 0.01384,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.01384,
+   "upstream_inference_prompt_cost": 0.01042,
+   "upstream_inference_completions_cost": 0.00342
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_088",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

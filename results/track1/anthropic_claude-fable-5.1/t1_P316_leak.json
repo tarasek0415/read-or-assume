@@ -1,0 +1,29 @@
+{
+ "text": "Premier League 2015/16, 1087 minutes, striker profile with high aerials (10.43 per 90), 2.73 shots, average x\u224880 \u2014 a target man forward with limited minutes. Candidates: Rudy Gestede (Aston Villa), Shane Long, Peter Crouch, Andy Carroll, Papiss Ciss\u00e9, Christian Benteke. Benteke played far more minutes (~2000). Andy Carroll played ~1,100 minutes in 2015/16 for West Ham (29 appearances, many sub). Gestede also ~1,100 minutes. Clearances 1.82, tackles 2.15 \u2014 Carroll's aerial numbers would typically be even higher (~15+). Gestede fits a 10 aerial/90 profile. I'll go with Rudy Gestede.\n\n{\"player\": \"Rudy Gestede\", \"team\": \"Aston Villa\"}",
+ "usage": {
+  "prompt_tokens": 277,
+  "completion_tokens": 296,
+  "total_tokens": 573,
+  "cost": 0.01757,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.01757,
+   "upstream_inference_prompt_cost": 0.00277,
+   "upstream_inference_completions_cost": 0.0148
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t1_P316_leak",
+ "model": "anthropic/claude-fable-5.1",
+ "track": 1
+}

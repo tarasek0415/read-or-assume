@@ -1,0 +1,29 @@
+{
+ "text": "Event 10 is stamped 138:39, but the events around it are at 78:32 and 78:40. That jump in the clock is impossible, so the error is a time_impossible corruption.\n\nOther possible issues were checked and ruled out:\n- Event 14 starts at a different location from where event 13 ended, but that is ordinary location noise.\n- Events 7 and 8 put a Team B right winger at x\u224898, so he is pressuring in his own attacking half. Flipped to Team A's frame, that position is 21.6, near the Team A left back at 17.3. This is consistent and fine.\n- Event 24 is a Team B pressure at x\u224840.8, which flips to about 79 in Team A's frame. That is not exactly at the carry end, but it is plausible.\n\n{\"corrupt\": \"yes\", \"index\": 10, \"type\": \"time_impossible\"}",
+ "usage": {
+  "prompt_tokens": 2578,
+  "completion_tokens": 278,
+  "total_tokens": 2856,
+  "cost": 0.015872,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.015872,
+   "upstream_inference_prompt_cost": 0.010312,
+   "upstream_inference_completions_cost": 0.00556
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_206",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

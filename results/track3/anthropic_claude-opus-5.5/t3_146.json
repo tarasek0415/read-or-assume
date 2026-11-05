@@ -1,0 +1,29 @@
+{
+ "text": "Event 11 records a Goal Keeper \"Goal Conceded\" at 87:12, but no shot comes before it. The only shot in the sequence is at event 31, and it was blocked. A goal conceded with no preceding shot matches the goal_no_shot corruption type.\n\n{\"corrupt\": \"yes\", \"index\": 11, \"type\": \"goal_no_shot\"}",
+ "usage": {
+  "prompt_tokens": 2451,
+  "completion_tokens": 121,
+  "total_tokens": 2572,
+  "cost": 0.012224,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.012224,
+   "upstream_inference_prompt_cost": 0.009804,
+   "upstream_inference_completions_cost": 0.00242
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_146",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

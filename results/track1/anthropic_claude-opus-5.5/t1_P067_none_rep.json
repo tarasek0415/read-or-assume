@@ -1,0 +1,29 @@
+{
+ "text": "{\"position\": \"forward\"}",
+ "usage": {
+  "prompt_tokens": 280,
+  "completion_tokens": 137,
+  "total_tokens": 417,
+  "cost": 0.00386,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00386,
+   "upstream_inference_prompt_cost": 0.00112,
+   "upstream_inference_completions_cost": 0.00274
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 126,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t1_P067_none_rep",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 1
+}

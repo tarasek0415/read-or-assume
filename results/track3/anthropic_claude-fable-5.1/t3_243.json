@@ -1,0 +1,29 @@
+{
+ "text": "Looking for inconsistencies: pass speeds (e.g., idx 22: ~44m in 2.5s \u2248 17.6 m/s \u2014 plausible for a ground pass; idx 17: 30.7m in 1.7s \u2248 18 m/s plausible; idx 29: 46.6m in 2.6s plausible), team attributions, times, and keeper events.\n\nIdx 1: Team A P434 (Left Back) Dribble at 74.2,0.1, then Team B P359 (Right Back) Tackle at 45.9,80.0 \u2014 mirrored coordinates match (120-74.2=45.8, 80-0.1=79.9), consistent. Idx 19: Team A recovers at 45.4,69.9 after Team B's incomplete pass ending at 74.7,10.2 \u2014 mirrored 45.3,69.8, consistent. Idx 31: Team B P277 recovery pass at 51.5,27.3 after Team A's incomplete pass ending at 68.6,52.8 \u2014 mirrored 51.4,27.2, consistent. Idx 25: Team B CF pressure at 93.2,29.9 vs keeper at 9.8,50.9 \u2192 mirrored 110.2,29.1 \u2014 hmm, pressure at 93.2 is 17m away, but pressure events are loosely located; acceptable.\n\nAll timings monotone and durations consistent. No corruption detected.\n\n{\"corrupt\": \"no\", \"index\": null, \"type\": null}",
+ "usage": {
+  "prompt_tokens": 2539,
+  "completion_tokens": 482,
+  "total_tokens": 3021,
+  "cost": 0.04949,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.04949,
+   "upstream_inference_prompt_cost": 0.02539,
+   "upstream_inference_completions_cost": 0.0241
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_243",
+ "model": "anthropic/claude-fable-5.1",
+ "track": 3
+}

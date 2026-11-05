@@ -1,0 +1,40 @@
+# Models are OpenRouter ids. Prices are USD per million tokens (for estimates only).
+models:
+  - id: anthropic/claude-haiku-5.5      # cheap: used for the 20-call tests first
+    price_in: 0.10
+    price_out: 0.50
+  - id: anthropic/claude-opus-5.5
+    price_in: 4.0
+    price_out: 20.0
+  - id: anthropic/claude-fable-5.1   # 20-call sample only: too dear for the full run
+    price_in: 10.0
+    price_out: 50.0
+  - id: openai/gpt-6-astra
+    price_in: 10.0
+    price_out: 50.0
+  - id: google/gemini-4-argon
+    price_in: 2.0
+    price_out: 10.0
+  - id: meta/muse-wonder
+    price_in: 4.0
+    price_out: 20.0
+    reasoning: minimal   # cannot think less than ~500 tokens per call, so only track 2 is affordable
+
+seed: 2016            # one seed for anonymisation, sampling, shuffling and plants
+repeat_fraction: 0.2  # share of prompts sent twice to measure self-agreement
+max_tokens: 300
+reasoning: "low"              # "off" or "low". The top models refuse to run with thinking off, so "low" with a budget.
+max_tokens_with_reasoning: 1500   # thinking + answer; a call that runs out counts as bad format
+
+track1:
+  min_minutes: 900
+  max_players: 150
+track2:
+  questions: 8
+track3:
+  n_excerpts: 300
+  clean_share: 0.4
+
+spend:
+  hard_cap_usd: 20.0  # the runner refuses to start a batch whose estimate exceeds this
+  reserve_usd: 1.0    # stop cleanly when the account balance drops below this

@@ -1,0 +1,29 @@
+{
+ "text": "{\"position\": \"defender\"}",
+ "usage": {
+  "prompt_tokens": 280,
+  "completion_tokens": 11,
+  "total_tokens": 291,
+  "cost": 0.00335,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00335,
+   "upstream_inference_prompt_cost": 0.0028,
+   "upstream_inference_completions_cost": 0.00055
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t1_P474_none",
+ "model": "anthropic/claude-fable-5.1",
+ "track": 1
+}

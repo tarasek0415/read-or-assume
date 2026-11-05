@@ -1,0 +1,2774 @@
+{
+ "track1/anthropic_claude-fable-5.1": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 20
+  },
+  "self_agreement": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "leak_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 6
+  },
+  "none/all/accuracy": {
+   "mean": 0.6,
+   "lo": 0.2,
+   "hi": 1.0,
+   "n": 5
+  },
+  "none/defender/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 1
+  },
+  "none/midfielder/accuracy": {
+   "mean": 0.5,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "none/forward/accuracy": {
+   "mean": 0.5,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "true/all/accuracy": {
+   "mean": 0.833,
+   "lo": 0.5,
+   "hi": 1.0,
+   "n": 6
+  },
+  "true/all/label_follow": {
+   "mean": 0.833,
+   "lo": 0.5,
+   "hi": 1.0,
+   "n": 6
+  },
+  "true/all/override": {
+   "mean": 0.167,
+   "lo": 0.0,
+   "hi": 0.5,
+   "n": 6
+  },
+  "true/defender/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/defender/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/defender/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/midfielder/accuracy": {
+   "mean": 0.833,
+   "lo": 0.5,
+   "hi": 1.0,
+   "n": 6
+  },
+  "true/midfielder/label_follow": {
+   "mean": 0.833,
+   "lo": 0.5,
+   "hi": 1.0,
+   "n": 6
+  },
+  "true/midfielder/override": {
+   "mean": 0.167,
+   "lo": 0.0,
+   "hi": 0.5,
+   "n": 6
+  },
+  "true/forward/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/forward/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/forward/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/all/accuracy": {
+   "mean": 0.667,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "false/all/label_follow": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 3
+  },
+  "false/all/override": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "false/defender/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/defender/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/defender/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/forward/accuracy": {
+   "mean": 0.667,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "false/forward/label_follow": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 3
+  },
+  "false/forward/override": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  }
+ },
+ "track1/anthropic_claude-haiku-5.5": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 20
+  },
+  "self_agreement": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "leak_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 6
+  },
+  "none/all/accuracy": {
+   "mean": 0.8,
+   "lo": 0.4,
+   "hi": 1.0,
+   "n": 5
+  },
+  "none/defender/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 1
+  },
+  "none/midfielder/accuracy": {
+   "mean": 0.5,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "none/forward/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "true/all/accuracy": {
+   "mean": 0.833,
+   "lo": 0.5,
+   "hi": 1.0,
+   "n": 6
+  },
+  "true/all/label_follow": {
+   "mean": 0.833,
+   "lo": 0.5,
+   "hi": 1.0,
+   "n": 6
+  },
+  "true/all/override": {
+   "mean": 0.167,
+   "lo": 0.0,
+   "hi": 0.5,
+   "n": 6
+  },
+  "true/defender/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/defender/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/defender/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/midfielder/accuracy": {
+   "mean": 0.833,
+   "lo": 0.5,
+   "hi": 1.0,
+   "n": 6
+  },
+  "true/midfielder/label_follow": {
+   "mean": 0.833,
+   "lo": 0.5,
+   "hi": 1.0,
+   "n": 6
+  },
+  "true/midfielder/override": {
+   "mean": 0.167,
+   "lo": 0.0,
+   "hi": 0.5,
+   "n": 6
+  },
+  "true/forward/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/forward/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/forward/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/all/accuracy": {
+   "mean": 0.333,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "false/all/label_follow": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 3
+  },
+  "false/all/override": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "false/defender/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/defender/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/defender/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/forward/accuracy": {
+   "mean": 0.333,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "false/forward/label_follow": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 3
+  },
+  "false/forward/override": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  }
+ },
+ "track1/anthropic_claude-opus-5.5": {
+  "bad_format": {
+   "mean": 0.002,
+   "lo": 0.0,
+   "hi": 0.005,
+   "n": 652
+  },
+  "self_agreement": {
+   "mean": 0.862,
+   "lo": 0.798,
+   "hi": 0.927,
+   "n": 109
+  },
+  "leak_rate": {
+   "mean": 0.193,
+   "lo": 0.133,
+   "hi": 0.253,
+   "n": 150
+  },
+  "none/all/accuracy": {
+   "mean": 0.853,
+   "lo": 0.8,
+   "hi": 0.907,
+   "n": 150
+  },
+  "none/defender/accuracy": {
+   "mean": 0.8,
+   "lo": 0.691,
+   "hi": 0.891,
+   "n": 55
+  },
+  "none/midfielder/accuracy": {
+   "mean": 0.912,
+   "lo": 0.825,
+   "hi": 0.982,
+   "n": 57
+  },
+  "none/forward/accuracy": {
+   "mean": 0.842,
+   "lo": 0.711,
+   "hi": 0.947,
+   "n": 38
+  },
+  "true/all/accuracy": {
+   "mean": 0.88,
+   "lo": 0.827,
+   "hi": 0.927,
+   "n": 150
+  },
+  "true/all/label_follow": {
+   "mean": 0.88,
+   "lo": 0.827,
+   "hi": 0.927,
+   "n": 150
+  },
+  "true/all/override": {
+   "mean": 0.12,
+   "lo": 0.073,
+   "hi": 0.173,
+   "n": 150
+  },
+  "true/defender/accuracy": {
+   "mean": 0.855,
+   "lo": 0.764,
+   "hi": 0.945,
+   "n": 55
+  },
+  "true/defender/label_follow": {
+   "mean": 0.855,
+   "lo": 0.764,
+   "hi": 0.945,
+   "n": 55
+  },
+  "true/defender/override": {
+   "mean": 0.145,
+   "lo": 0.055,
+   "hi": 0.236,
+   "n": 55
+  },
+  "true/midfielder/accuracy": {
+   "mean": 0.912,
+   "lo": 0.825,
+   "hi": 0.982,
+   "n": 57
+  },
+  "true/midfielder/label_follow": {
+   "mean": 0.912,
+   "lo": 0.825,
+   "hi": 0.982,
+   "n": 57
+  },
+  "true/midfielder/override": {
+   "mean": 0.088,
+   "lo": 0.018,
+   "hi": 0.175,
+   "n": 57
+  },
+  "true/forward/accuracy": {
+   "mean": 0.868,
+   "lo": 0.763,
+   "hi": 0.974,
+   "n": 38
+  },
+  "true/forward/label_follow": {
+   "mean": 0.868,
+   "lo": 0.763,
+   "hi": 0.974,
+   "n": 38
+  },
+  "true/forward/override": {
+   "mean": 0.132,
+   "lo": 0.026,
+   "hi": 0.237,
+   "n": 38
+  },
+  "false/all/accuracy": {
+   "mean": 0.774,
+   "lo": 0.688,
+   "hi": 0.849,
+   "n": 93
+  },
+  "false/all/label_follow": {
+   "mean": 0.011,
+   "lo": 0.0,
+   "hi": 0.032,
+   "n": 93
+  },
+  "false/all/override": {
+   "mean": 0.989,
+   "lo": 0.968,
+   "hi": 1.0,
+   "n": 93
+  },
+  "false/defender/accuracy": {
+   "mean": 0.764,
+   "lo": 0.636,
+   "hi": 0.873,
+   "n": 55
+  },
+  "false/defender/label_follow": {
+   "mean": 0.018,
+   "lo": 0.0,
+   "hi": 0.055,
+   "n": 55
+  },
+  "false/defender/override": {
+   "mean": 0.982,
+   "lo": 0.945,
+   "hi": 1.0,
+   "n": 55
+  },
+  "false/midfielder/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/forward/accuracy": {
+   "mean": 0.789,
+   "lo": 0.658,
+   "hi": 0.895,
+   "n": 38
+  },
+  "false/forward/label_follow": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 38
+  },
+  "false/forward/override": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 38
+  }
+ },
+ "track1/google_gemini-4-argon": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 652
+  },
+  "self_agreement": {
+   "mean": 0.89,
+   "lo": 0.835,
+   "hi": 0.945,
+   "n": 109
+  },
+  "leak_rate": {
+   "mean": 0.127,
+   "lo": 0.08,
+   "hi": 0.18,
+   "n": 150
+  },
+  "none/all/accuracy": {
+   "mean": 0.873,
+   "lo": 0.82,
+   "hi": 0.92,
+   "n": 150
+  },
+  "none/defender/accuracy": {
+   "mean": 0.945,
+   "lo": 0.873,
+   "hi": 1.0,
+   "n": 55
+  },
+  "none/midfielder/accuracy": {
+   "mean": 0.789,
+   "lo": 0.684,
+   "hi": 0.895,
+   "n": 57
+  },
+  "none/forward/accuracy": {
+   "mean": 0.895,
+   "lo": 0.789,
+   "hi": 0.974,
+   "n": 38
+  },
+  "true/all/accuracy": {
+   "mean": 0.88,
+   "lo": 0.827,
+   "hi": 0.933,
+   "n": 150
+  },
+  "true/all/label_follow": {
+   "mean": 0.88,
+   "lo": 0.827,
+   "hi": 0.933,
+   "n": 150
+  },
+  "true/all/override": {
+   "mean": 0.12,
+   "lo": 0.067,
+   "hi": 0.173,
+   "n": 150
+  },
+  "true/defender/accuracy": {
+   "mean": 0.927,
+   "lo": 0.855,
+   "hi": 0.982,
+   "n": 55
+  },
+  "true/defender/label_follow": {
+   "mean": 0.927,
+   "lo": 0.855,
+   "hi": 0.982,
+   "n": 55
+  },
+  "true/defender/override": {
+   "mean": 0.073,
+   "lo": 0.018,
+   "hi": 0.145,
+   "n": 55
+  },
+  "true/midfielder/accuracy": {
+   "mean": 0.842,
+   "lo": 0.737,
+   "hi": 0.93,
+   "n": 57
+  },
+  "true/midfielder/label_follow": {
+   "mean": 0.842,
+   "lo": 0.737,
+   "hi": 0.93,
+   "n": 57
+  },
+  "true/midfielder/override": {
+   "mean": 0.158,
+   "lo": 0.07,
+   "hi": 0.263,
+   "n": 57
+  },
+  "true/forward/accuracy": {
+   "mean": 0.868,
+   "lo": 0.763,
+   "hi": 0.974,
+   "n": 38
+  },
+  "true/forward/label_follow": {
+   "mean": 0.868,
+   "lo": 0.763,
+   "hi": 0.974,
+   "n": 38
+  },
+  "true/forward/override": {
+   "mean": 0.132,
+   "lo": 0.026,
+   "hi": 0.237,
+   "n": 38
+  },
+  "false/all/accuracy": {
+   "mean": 0.914,
+   "lo": 0.849,
+   "hi": 0.968,
+   "n": 93
+  },
+  "false/all/label_follow": {
+   "mean": 0.022,
+   "lo": 0.0,
+   "hi": 0.054,
+   "n": 93
+  },
+  "false/all/override": {
+   "mean": 0.978,
+   "lo": 0.946,
+   "hi": 1.0,
+   "n": 93
+  },
+  "false/defender/accuracy": {
+   "mean": 0.945,
+   "lo": 0.891,
+   "hi": 1.0,
+   "n": 55
+  },
+  "false/defender/label_follow": {
+   "mean": 0.036,
+   "lo": 0.0,
+   "hi": 0.091,
+   "n": 55
+  },
+  "false/defender/override": {
+   "mean": 0.964,
+   "lo": 0.909,
+   "hi": 1.0,
+   "n": 55
+  },
+  "false/midfielder/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/forward/accuracy": {
+   "mean": 0.868,
+   "lo": 0.737,
+   "hi": 0.974,
+   "n": 38
+  },
+  "false/forward/label_follow": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 38
+  },
+  "false/forward/override": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 38
+  }
+ },
+ "track1/meta_muse-wonder": {
+  "bad_format": {
+   "mean": 0.002,
+   "lo": 0.0,
+   "hi": 0.007,
+   "n": 450
+  },
+  "self_agreement": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "leak_rate": {
+   "mean": 0.185,
+   "lo": 0.118,
+   "hi": 0.252,
+   "n": 119
+  },
+  "none/all/accuracy": {
+   "mean": 0.879,
+   "lo": 0.823,
+   "hi": 0.927,
+   "n": 124
+  },
+  "none/defender/accuracy": {
+   "mean": 0.936,
+   "lo": 0.851,
+   "hi": 1.0,
+   "n": 47
+  },
+  "none/midfielder/accuracy": {
+   "mean": 0.792,
+   "lo": 0.667,
+   "hi": 0.896,
+   "n": 48
+  },
+  "none/forward/accuracy": {
+   "mean": 0.931,
+   "lo": 0.828,
+   "hi": 1.0,
+   "n": 29
+  },
+  "true/all/accuracy": {
+   "mean": 0.496,
+   "lo": 0.416,
+   "hi": 0.584,
+   "n": 125
+  },
+  "true/all/label_follow": {
+   "mean": 0.496,
+   "lo": 0.416,
+   "hi": 0.584,
+   "n": 125
+  },
+  "true/all/override": {
+   "mean": 0.504,
+   "lo": 0.416,
+   "hi": 0.584,
+   "n": 125
+  },
+  "true/defender/accuracy": {
+   "mean": 0.396,
+   "lo": 0.25,
+   "hi": 0.521,
+   "n": 48
+  },
+  "true/defender/label_follow": {
+   "mean": 0.396,
+   "lo": 0.25,
+   "hi": 0.521,
+   "n": 48
+  },
+  "true/defender/override": {
+   "mean": 0.604,
+   "lo": 0.479,
+   "hi": 0.75,
+   "n": 48
+  },
+  "true/midfielder/accuracy": {
+   "mean": 0.391,
+   "lo": 0.261,
+   "hi": 0.522,
+   "n": 46
+  },
+  "true/midfielder/label_follow": {
+   "mean": 0.391,
+   "lo": 0.261,
+   "hi": 0.522,
+   "n": 46
+  },
+  "true/midfielder/override": {
+   "mean": 0.609,
+   "lo": 0.478,
+   "hi": 0.739,
+   "n": 46
+  },
+  "true/forward/accuracy": {
+   "mean": 0.806,
+   "lo": 0.677,
+   "hi": 0.935,
+   "n": 31
+  },
+  "true/forward/label_follow": {
+   "mean": 0.806,
+   "lo": 0.677,
+   "hi": 0.935,
+   "n": 31
+  },
+  "true/forward/override": {
+   "mean": 0.194,
+   "lo": 0.065,
+   "hi": 0.323,
+   "n": 31
+  },
+  "false/all/accuracy": {
+   "mean": 0.805,
+   "lo": 0.719,
+   "hi": 0.89,
+   "n": 82
+  },
+  "false/all/label_follow": {
+   "mean": 0.012,
+   "lo": 0.0,
+   "hi": 0.037,
+   "n": 82
+  },
+  "false/all/override": {
+   "mean": 0.988,
+   "lo": 0.963,
+   "hi": 1.0,
+   "n": 82
+  },
+  "false/defender/accuracy": {
+   "mean": 0.714,
+   "lo": 0.592,
+   "hi": 0.837,
+   "n": 49
+  },
+  "false/defender/label_follow": {
+   "mean": 0.02,
+   "lo": 0.0,
+   "hi": 0.061,
+   "n": 49
+  },
+  "false/defender/override": {
+   "mean": 0.98,
+   "lo": 0.939,
+   "hi": 1.0,
+   "n": 49
+  },
+  "false/midfielder/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/forward/accuracy": {
+   "mean": 0.939,
+   "lo": 0.848,
+   "hi": 1.0,
+   "n": 33
+  },
+  "false/forward/label_follow": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 33
+  },
+  "false/forward/override": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 33
+  }
+ },
+ "track1/openai_gpt-6-astra": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 20
+  },
+  "self_agreement": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "leak_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 6
+  },
+  "none/all/accuracy": {
+   "mean": 0.6,
+   "lo": 0.2,
+   "hi": 1.0,
+   "n": 5
+  },
+  "none/defender/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 1
+  },
+  "none/midfielder/accuracy": {
+   "mean": 0.5,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "none/forward/accuracy": {
+   "mean": 0.5,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "true/all/accuracy": {
+   "mean": 0.833,
+   "lo": 0.5,
+   "hi": 1.0,
+   "n": 6
+  },
+  "true/all/label_follow": {
+   "mean": 0.833,
+   "lo": 0.5,
+   "hi": 1.0,
+   "n": 6
+  },
+  "true/all/override": {
+   "mean": 0.167,
+   "lo": 0.0,
+   "hi": 0.5,
+   "n": 6
+  },
+  "true/defender/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/defender/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/defender/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/midfielder/accuracy": {
+   "mean": 0.833,
+   "lo": 0.5,
+   "hi": 1.0,
+   "n": 6
+  },
+  "true/midfielder/label_follow": {
+   "mean": 0.833,
+   "lo": 0.5,
+   "hi": 1.0,
+   "n": 6
+  },
+  "true/midfielder/override": {
+   "mean": 0.167,
+   "lo": 0.0,
+   "hi": 0.5,
+   "n": 6
+  },
+  "true/forward/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/forward/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "true/forward/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/all/accuracy": {
+   "mean": 0.667,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "false/all/label_follow": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 3
+  },
+  "false/all/override": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "false/defender/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/defender/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/defender/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/accuracy": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/label_follow": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/midfielder/override": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "false/forward/accuracy": {
+   "mean": 0.667,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "false/forward/label_follow": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 3
+  },
+  "false/forward/override": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  }
+ },
+ "track2/anthropic_claude-fable-5.1": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 20
+  },
+  "self_agreement": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "leak_rate": {
+   "mean": 0.286,
+   "lo": 0.0,
+   "hi": 0.571,
+   "n": 7
+  },
+  "neutral/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 40
+  },
+  "neutral/finish_mae": {
+   "mean": 2.4,
+   "lo": 0.8,
+   "hi": 4.2,
+   "n": 5
+  },
+  "big/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 48
+  },
+  "big/finish_mae": {
+   "mean": 8.667,
+   "lo": 5.663,
+   "hi": 11.337,
+   "n": 6
+  },
+  "big/flip_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 16
+  },
+  "big/flips_toward_yes": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "big/finish_shift_vs_neutral": {
+   "mean": -1.0,
+   "lo": -11.0,
+   "hi": 9.0,
+   "n": 2
+  },
+  "small/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 16
+  },
+  "small/finish_mae": {
+   "mean": 6.5,
+   "lo": 4.0,
+   "hi": 9.0,
+   "n": 2
+  },
+  "small/flip_rate": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "small/flips_toward_yes": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "small/finish_shift_vs_neutral": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  }
+ },
+ "track2/anthropic_claude-haiku-5.5": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 20
+  },
+  "self_agreement": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "leak_rate": {
+   "mean": 0.143,
+   "lo": 0.0,
+   "hi": 0.429,
+   "n": 7
+  },
+  "neutral/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 40
+  },
+  "neutral/finish_mae": {
+   "mean": 3.8,
+   "lo": 1.2,
+   "hi": 6.4,
+   "n": 5
+  },
+  "big/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 48
+  },
+  "big/finish_mae": {
+   "mean": 7.667,
+   "lo": 4.0,
+   "hi": 10.504,
+   "n": 6
+  },
+  "big/flip_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 16
+  },
+  "big/flips_toward_yes": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "big/finish_shift_vs_neutral": {
+   "mean": -9.0,
+   "lo": -11.0,
+   "hi": -7.0,
+   "n": 2
+  },
+  "small/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 16
+  },
+  "small/finish_mae": {
+   "mean": 5.0,
+   "lo": 0.0,
+   "hi": 10.0,
+   "n": 2
+  },
+  "small/flip_rate": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "small/flips_toward_yes": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "small/finish_shift_vs_neutral": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  }
+ },
+ "track2/anthropic_claude-opus-5.5": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 96
+  },
+  "self_agreement": {
+   "mean": 0.875,
+   "lo": 0.688,
+   "hi": 1.0,
+   "n": 16
+  },
+  "leak_rate": {
+   "mean": 0.65,
+   "lo": 0.4,
+   "hi": 0.85,
+   "n": 20
+  },
+  "neutral/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 160
+  },
+  "neutral/finish_mae": {
+   "mean": 2.25,
+   "lo": 1.4,
+   "hi": 3.2,
+   "n": 20
+  },
+  "big/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 160
+  },
+  "big/finish_mae": {
+   "mean": 5.65,
+   "lo": 3.95,
+   "hi": 7.45,
+   "n": 20
+  },
+  "big/flip_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 160
+  },
+  "big/flips_toward_yes": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "big/finish_shift_vs_neutral": {
+   "mean": -2.5,
+   "lo": -5.401,
+   "hi": 0.85,
+   "n": 20
+  },
+  "small/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 160
+  },
+  "small/finish_mae": {
+   "mean": 7.85,
+   "lo": 5.849,
+   "hi": 10.001,
+   "n": 20
+  },
+  "small/flip_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 160
+  },
+  "small/flips_toward_yes": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "small/finish_shift_vs_neutral": {
+   "mean": 6.1,
+   "lo": 3.5,
+   "hi": 8.954,
+   "n": 20
+  }
+ },
+ "track2/google_gemini-4-argon": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 96
+  },
+  "self_agreement": {
+   "mean": 0.625,
+   "lo": 0.375,
+   "hi": 0.875,
+   "n": 16
+  },
+  "leak_rate": {
+   "mean": 0.75,
+   "lo": 0.55,
+   "hi": 0.95,
+   "n": 20
+  },
+  "neutral/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 160
+  },
+  "neutral/finish_mae": {
+   "mean": 1.1,
+   "lo": 0.5,
+   "hi": 1.85,
+   "n": 20
+  },
+  "big/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 160
+  },
+  "big/finish_mae": {
+   "mean": 2.65,
+   "lo": 1.75,
+   "hi": 3.7,
+   "n": 20
+  },
+  "big/flip_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 160
+  },
+  "big/flips_toward_yes": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "big/finish_shift_vs_neutral": {
+   "mean": 2.05,
+   "lo": 0.9,
+   "hi": 3.4,
+   "n": 20
+  },
+  "small/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 160
+  },
+  "small/finish_mae": {
+   "mean": 5.0,
+   "lo": 3.549,
+   "hi": 6.45,
+   "n": 20
+  },
+  "small/flip_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 160
+  },
+  "small/flips_toward_yes": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "small/finish_shift_vs_neutral": {
+   "mean": 3.6,
+   "lo": 1.399,
+   "hi": 5.85,
+   "n": 20
+  }
+ },
+ "track2/meta_muse-wonder": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 96
+  },
+  "self_agreement": {
+   "mean": 0.688,
+   "lo": 0.438,
+   "hi": 0.875,
+   "n": 16
+  },
+  "leak_rate": {
+   "mean": 0.55,
+   "lo": 0.35,
+   "hi": 0.75,
+   "n": 20
+  },
+  "neutral/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 160
+  },
+  "neutral/finish_mae": {
+   "mean": 1.8,
+   "lo": 1.0,
+   "hi": 2.85,
+   "n": 20
+  },
+  "big/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 160
+  },
+  "big/finish_mae": {
+   "mean": 7.05,
+   "lo": 5.2,
+   "hi": 8.8,
+   "n": 20
+  },
+  "big/flip_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 160
+  },
+  "big/flips_toward_yes": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "big/finish_shift_vs_neutral": {
+   "mean": -4.75,
+   "lo": -8.0,
+   "hi": -1.3,
+   "n": 20
+  },
+  "small/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 160
+  },
+  "small/finish_mae": {
+   "mean": 6.7,
+   "lo": 4.75,
+   "hi": 8.751,
+   "n": 20
+  },
+  "small/flip_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 160
+  },
+  "small/flips_toward_yes": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "small/finish_shift_vs_neutral": {
+   "mean": 4.5,
+   "lo": 1.7,
+   "hi": 7.35,
+   "n": 20
+  }
+ },
+ "track2/openai_gpt-6-astra": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 20
+  },
+  "self_agreement": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "leak_rate": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 7
+  },
+  "neutral/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 40
+  },
+  "neutral/finish_mae": {
+   "mean": 0.6,
+   "lo": 0.0,
+   "hi": 1.8,
+   "n": 5
+  },
+  "big/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 48
+  },
+  "big/finish_mae": {
+   "mean": 8.667,
+   "lo": 5.663,
+   "hi": 11.337,
+   "n": 6
+  },
+  "big/flip_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 16
+  },
+  "big/flips_toward_yes": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "big/finish_shift_vs_neutral": {
+   "mean": -0.5,
+   "lo": -10.0,
+   "hi": 9.0,
+   "n": 2
+  },
+  "small/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 16
+  },
+  "small/finish_mae": {
+   "mean": 7.0,
+   "lo": 5.0,
+   "hi": 9.0,
+   "n": 2
+  },
+  "small/flip_rate": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "small/flips_toward_yes": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "small/finish_shift_vs_neutral": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  }
+ },
+ "track3/anthropic_claude-fable-5.1": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 20
+  },
+  "self_agreement": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "leak_rate": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "clean/false_alarm": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 7
+  },
+  "goal_no_shot/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "goal_no_shot/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "goal_no_shot/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "fast_long_pass/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "fast_long_pass/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "fast_long_pass/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "keeper_corner/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "keeper_corner/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "keeper_corner/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "wrong_team/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 5
+  },
+  "wrong_team/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 5
+  },
+  "wrong_team/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 5
+  },
+  "time_impossible/detected": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "time_impossible/localized_within_1": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "time_impossible/type_correct": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "sub_before_entry/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 1
+  },
+  "sub_before_entry/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 1
+  },
+  "sub_before_entry/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 1
+  },
+  "deleted_goal/detected": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "deleted_goal/localized_within_1": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "deleted_goal/type_correct": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "code_checkable/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 10
+  },
+  "code_checkable/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 10
+  },
+  "football_sense/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "football_sense/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "any_plant/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 13
+  }
+ },
+ "track3/anthropic_claude-haiku-5.5": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 20
+  },
+  "self_agreement": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "leak_rate": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "clean/false_alarm": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 7
+  },
+  "goal_no_shot/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "goal_no_shot/localized_within_1": {
+   "mean": 0.667,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "goal_no_shot/type_correct": {
+   "mean": 0.667,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "fast_long_pass/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "fast_long_pass/localized_within_1": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 2
+  },
+  "fast_long_pass/type_correct": {
+   "mean": 0.5,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "keeper_corner/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "keeper_corner/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "keeper_corner/type_correct": {
+   "mean": 0.5,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "wrong_team/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 5
+  },
+  "wrong_team/localized_within_1": {
+   "mean": 0.4,
+   "lo": 0.0,
+   "hi": 0.8,
+   "n": 5
+  },
+  "wrong_team/type_correct": {
+   "mean": 0.8,
+   "lo": 0.4,
+   "hi": 1.0,
+   "n": 5
+  },
+  "time_impossible/detected": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "time_impossible/localized_within_1": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "time_impossible/type_correct": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "sub_before_entry/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 1
+  },
+  "sub_before_entry/localized_within_1": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 1
+  },
+  "sub_before_entry/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 1
+  },
+  "deleted_goal/detected": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "deleted_goal/localized_within_1": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "deleted_goal/type_correct": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "code_checkable/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 10
+  },
+  "code_checkable/localized_within_1": {
+   "mean": 0.4,
+   "lo": 0.1,
+   "hi": 0.7,
+   "n": 10
+  },
+  "football_sense/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "football_sense/localized_within_1": {
+   "mean": 0.667,
+   "lo": 0.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "any_plant/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 13
+  }
+ },
+ "track3/anthropic_claude-opus-5.5": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 360
+  },
+  "self_agreement": {
+   "mean": 0.933,
+   "lo": 0.867,
+   "hi": 0.983,
+   "n": 60
+  },
+  "leak_rate": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "clean/false_alarm": {
+   "mean": 0.1,
+   "lo": 0.05,
+   "hi": 0.158,
+   "n": 120
+  },
+  "goal_no_shot/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "goal_no_shot/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "goal_no_shot/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "fast_long_pass/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "fast_long_pass/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "fast_long_pass/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "keeper_corner/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "keeper_corner/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "keeper_corner/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "wrong_team/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "wrong_team/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "wrong_team/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "time_impossible/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "time_impossible/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "time_impossible/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "sub_before_entry/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 25
+  },
+  "sub_before_entry/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 25
+  },
+  "sub_before_entry/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 25
+  },
+  "deleted_goal/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 25
+  },
+  "deleted_goal/localized_within_1": {
+   "mean": 0.92,
+   "lo": 0.8,
+   "hi": 1.0,
+   "n": 25
+  },
+  "deleted_goal/type_correct": {
+   "mean": 0.92,
+   "lo": 0.8,
+   "hi": 1.0,
+   "n": 25
+  },
+  "code_checkable/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 129
+  },
+  "code_checkable/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 129
+  },
+  "football_sense/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 51
+  },
+  "football_sense/localized_within_1": {
+   "mean": 0.961,
+   "lo": 0.902,
+   "hi": 1.0,
+   "n": 51
+  },
+  "any_plant/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 180
+  }
+ },
+ "track3/google_gemini-4-argon": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 360
+  },
+  "self_agreement": {
+   "mean": 0.95,
+   "lo": 0.9,
+   "hi": 1.0,
+   "n": 60
+  },
+  "leak_rate": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "clean/false_alarm": {
+   "mean": 0.033,
+   "lo": 0.008,
+   "hi": 0.067,
+   "n": 120
+  },
+  "goal_no_shot/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "goal_no_shot/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "goal_no_shot/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "fast_long_pass/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "fast_long_pass/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "fast_long_pass/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "keeper_corner/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "keeper_corner/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "keeper_corner/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "wrong_team/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "wrong_team/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "wrong_team/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "time_impossible/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "time_impossible/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "time_impossible/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 26
+  },
+  "sub_before_entry/detected": {
+   "mean": 0.96,
+   "lo": 0.88,
+   "hi": 1.0,
+   "n": 25
+  },
+  "sub_before_entry/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 24
+  },
+  "sub_before_entry/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 24
+  },
+  "deleted_goal/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 25
+  },
+  "deleted_goal/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 25
+  },
+  "deleted_goal/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 25
+  },
+  "code_checkable/detected": {
+   "mean": 0.992,
+   "lo": 0.977,
+   "hi": 1.0,
+   "n": 129
+  },
+  "code_checkable/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 128
+  },
+  "football_sense/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 51
+  },
+  "football_sense/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 51
+  },
+  "any_plant/detected": {
+   "mean": 0.994,
+   "lo": 0.983,
+   "hi": 1.0,
+   "n": 180
+  }
+ },
+ "track3/meta_muse-wonder": {
+  "bad_format": {
+   "mean": 0.3,
+   "lo": 0.21,
+   "hi": 0.39,
+   "n": 100
+  },
+  "self_agreement": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "leak_rate": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "clean/false_alarm": {
+   "mean": 0.216,
+   "lo": 0.108,
+   "hi": 0.352,
+   "n": 37
+  },
+  "goal_no_shot/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 8
+  },
+  "goal_no_shot/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 8
+  },
+  "goal_no_shot/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 8
+  },
+  "fast_long_pass/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 11
+  },
+  "fast_long_pass/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 11
+  },
+  "fast_long_pass/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 11
+  },
+  "keeper_corner/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 10
+  },
+  "keeper_corner/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 10
+  },
+  "keeper_corner/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 10
+  },
+  "wrong_team/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 12
+  },
+  "wrong_team/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 12
+  },
+  "wrong_team/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 12
+  },
+  "time_impossible/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 8
+  },
+  "time_impossible/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 8
+  },
+  "time_impossible/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 8
+  },
+  "sub_before_entry/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 6
+  },
+  "sub_before_entry/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 6
+  },
+  "sub_before_entry/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 6
+  },
+  "deleted_goal/detected": {
+   "mean": 0.75,
+   "lo": 0.5,
+   "hi": 1.0,
+   "n": 8
+  },
+  "deleted_goal/localized_within_1": {
+   "mean": 0.833,
+   "lo": 0.5,
+   "hi": 1.0,
+   "n": 6
+  },
+  "deleted_goal/type_correct": {
+   "mean": 0.667,
+   "lo": 0.333,
+   "hi": 1.0,
+   "n": 6
+  },
+  "code_checkable/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 47
+  },
+  "code_checkable/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 47
+  },
+  "football_sense/detected": {
+   "mean": 0.875,
+   "lo": 0.688,
+   "hi": 1.0,
+   "n": 16
+  },
+  "football_sense/localized_within_1": {
+   "mean": 0.929,
+   "lo": 0.786,
+   "hi": 1.0,
+   "n": 14
+  },
+  "any_plant/detected": {
+   "mean": 0.968,
+   "lo": 0.921,
+   "hi": 1.0,
+   "n": 63
+  }
+ },
+ "track3/openai_gpt-6-astra": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 20
+  },
+  "self_agreement": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "leak_rate": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "clean/false_alarm": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 7
+  },
+  "goal_no_shot/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "goal_no_shot/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "goal_no_shot/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "fast_long_pass/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "fast_long_pass/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "fast_long_pass/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "keeper_corner/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "keeper_corner/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "keeper_corner/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 2
+  },
+  "wrong_team/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 5
+  },
+  "wrong_team/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 5
+  },
+  "wrong_team/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 5
+  },
+  "time_impossible/detected": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "time_impossible/localized_within_1": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "time_impossible/type_correct": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "sub_before_entry/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 1
+  },
+  "sub_before_entry/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 1
+  },
+  "sub_before_entry/type_correct": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 1
+  },
+  "deleted_goal/detected": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "deleted_goal/localized_within_1": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "deleted_goal/type_correct": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "code_checkable/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 10
+  },
+  "code_checkable/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 10
+  },
+  "football_sense/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "football_sense/localized_within_1": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 3
+  },
+  "any_plant/detected": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 13
+  }
+ }
+}

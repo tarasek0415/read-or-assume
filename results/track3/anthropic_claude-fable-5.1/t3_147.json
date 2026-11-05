@@ -1,0 +1,29 @@
+{
+ "text": "Looking at event 18: P177 is a Team B player (Right Wing, intercepted and carried for Team B at idx 16-17), but at idx 18 the pass is attributed to Team A. The pass continues from P177's carry end location (6.8,10.6) and is received by Team B's P326, so the team label is wrong.\n\n{\"corrupt\": \"yes\", \"index\": 18, \"type\": \"wrong_team\"}",
+ "usage": {
+  "prompt_tokens": 2479,
+  "completion_tokens": 135,
+  "total_tokens": 2614,
+  "cost": 0.03154,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.03154,
+   "upstream_inference_prompt_cost": 0.02479,
+   "upstream_inference_completions_cost": 0.00675
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_147",
+ "model": "anthropic/claude-fable-5.1",
+ "track": 3
+}

@@ -1,0 +1,29 @@
+{
+ "text": "Looking for inconsistencies: pass speeds, timing, team ownership.\n\nEvent 4: 42.6,5.1 -> 14.2,22.4, distance ~33.3, 2.1s \u2014 fine. Event 19: distance ~29.9 in 1.8s \u2014 fine. Event 28: ~34.8 in 2.8s \u2014 fine. Event 31: ~72 in 3.4s high pass \u2014 plausible. Event 26: distance ~26 in 3.3s \u2014 fine. Event 39: ~23 in 2.4s \u2014 fine.\n\nTimestamps are monotonic. Event 27: Team A P403 receipt of incomplete pass \u2014 normal for StatsBomb incomplete passes. Event 23/24: dribbled past at 84:06 paired with dribble \u2014 consistent. Event 33: Team A clearance after Team B keeper's pass \u2014 consistent (incomplete pass). Event 34: Team B recovery \u2014 fine.\n\nNothing appears corrupted.\n\n{\"corrupt\": \"no\", \"index\": null, \"type\": null}",
+ "usage": {
+  "prompt_tokens": 2579,
+  "completion_tokens": 337,
+  "total_tokens": 2916,
+  "cost": 0.04264,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.04264,
+   "upstream_inference_prompt_cost": 0.02579,
+   "upstream_inference_completions_cost": 0.01685
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_042",
+ "model": "anthropic/claude-fable-5.1",
+ "track": 3
+}

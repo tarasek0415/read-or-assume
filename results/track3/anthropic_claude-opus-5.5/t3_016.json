@@ -1,0 +1,29 @@
+{
+ "text": "Event 11 is a pass by P289, the Right Defensive Midfield, who is a Team A player. He received the ball and carried it in events 9 and 10 for Team A, yet event 11 lists his team as Team B. The pass is then received by Team A's P176 in event 12, so the team label on event 11 has been changed.\n\n{\"corrupt\": \"yes\", \"index\": 11, \"type\": \"wrong_team\"}",
+ "usage": {
+  "prompt_tokens": 2629,
+  "completion_tokens": 135,
+  "total_tokens": 2764,
+  "cost": 0.013216,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.013216,
+   "upstream_inference_prompt_cost": 0.010516,
+   "upstream_inference_completions_cost": 0.0027
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_016",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

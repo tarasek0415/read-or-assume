@@ -1,0 +1,29 @@
+{
+ "text": "Event 13 is a corner taken by P193, Team B's goalkeeper. A goalkeeper taking a corner is the keeper_corner corruption.\n\nOther events checked and found consistent:\n- **Event 5 (carry):** 38 units in 6.6 s is fine.\n- **Events 6\u20137 (pressure and dribbled past):** Team A at 37.8 is in their own frame, which mirrors to about 82 in Team B's frame. That matches Team B's dribble at 80.6.\n- **Event 40 (goal kick):** about 66 units in 3.7 s is fine.\n\n{\"corrupt\": \"yes\", \"index\": 13, \"type\": \"keeper_corner\"}",
+ "usage": {
+  "prompt_tokens": 2574,
+  "completion_tokens": 225,
+  "total_tokens": 2799,
+  "cost": 0.014796,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.014796,
+   "upstream_inference_prompt_cost": 0.010296,
+   "upstream_inference_completions_cost": 0.0045
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_072",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

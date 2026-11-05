@@ -1,0 +1,8 @@
+{
+ "text": null,
+ "error": "429 {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/anthropic/claude-opus-5.5-20260921. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortl",
+ "usage": {},
+ "id": "t1_P394_leak",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 1
+}

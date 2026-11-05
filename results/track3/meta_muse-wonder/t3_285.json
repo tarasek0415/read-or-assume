@@ -1,0 +1,29 @@
+{
+ "text": "{\"corrupt\": \"yes\", \"index\": 23, \"type\": \"wrong_team\"}",
+ "usage": {
+  "prompt_tokens": 1850,
+  "completion_tokens": 1249,
+  "total_tokens": 3099,
+  "cost": 0.03238,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.03238,
+   "upstream_inference_prompt_cost": 0.0074,
+   "upstream_inference_completions_cost": 0.02498
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1183,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_285",
+ "model": "meta/muse-wonder",
+ "track": 3
+}

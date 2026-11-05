@@ -1,0 +1,29 @@
+{
+ "text": "Event 15 is the corrupted one. P493 passes from 43.2,34.0 to 108.2,39.6, about 65 m, with a duration of only 0.5 s. That is implausibly fast for a ground pass.\n\nThe end point also doesn't match the next event. The receipt by P245 (event 16) is at 53.7,39.6, so the true end x looks to have been altered.\n\nThis fits the fast_long_pass corruption type.\n\n{\"corrupt\": \"yes\", \"index\": 15, \"type\": \"fast_long_pass\"}",
+ "usage": {
+  "prompt_tokens": 2581,
+  "completion_tokens": 173,
+  "total_tokens": 2754,
+  "cost": 0.013784,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.013784,
+   "upstream_inference_prompt_cost": 0.010324,
+   "upstream_inference_completions_cost": 0.00346
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_102",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

@@ -1,0 +1,29 @@
+{
+ "text": "Event 11 is the corrupted one. Team A's goalkeeper, P165, is listed as taking a corner from 120.0,0.1 at 27:21. Later, at events 15\u201317, he is back receiving and passing near his own goal. A goalkeeper taking a corner is implausible here, which matches the keeper_corner corruption type.\n\n{\"corrupt\": \"yes\", \"index\": 11, \"type\": \"keeper_corner\"}",
+ "usage": {
+  "prompt_tokens": 2677,
+  "completion_tokens": 142,
+  "total_tokens": 2819,
+  "cost": 0.013548,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.013548,
+   "upstream_inference_prompt_cost": 0.010708,
+   "upstream_inference_completions_cost": 0.00284
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_232",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

@@ -1,0 +1,29 @@
+{
+ "text": "{\"corrupt\": \"yes\", \"index\": 20, \"type\": \"fast_long_pass\"}",
+ "usage": {
+  "prompt_tokens": 2273,
+  "completion_tokens": 28,
+  "total_tokens": 2301,
+  "cost": 0.004826,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.004826,
+   "upstream_inference_prompt_cost": 0.004546,
+   "upstream_inference_completions_cost": 0.00028
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_118",
+ "model": "google/gemini-4-argon",
+ "track": 3
+}

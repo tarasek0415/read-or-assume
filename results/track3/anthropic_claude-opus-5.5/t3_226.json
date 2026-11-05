@@ -1,0 +1,29 @@
+{
+ "text": "Event 13 is a \"Goal Conceded\" by Team A's goalkeeper at 24:44, but Team B takes no shot anywhere around it. Play also simply continues afterwards with event 14 at 24:49, with no restart. This is the goal_no_shot corruption.\n\n{\"corrupt\":\"yes\",\"index\":13,\"type\":\"goal_no_shot\"}",
+ "usage": {
+  "prompt_tokens": 2524,
+  "completion_tokens": 121,
+  "total_tokens": 2645,
+  "cost": 0.012516,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.012516,
+   "upstream_inference_prompt_cost": 0.010096,
+   "upstream_inference_completions_cost": 0.00242
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_226",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

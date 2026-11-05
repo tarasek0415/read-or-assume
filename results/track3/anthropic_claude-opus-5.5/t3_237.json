@@ -1,0 +1,29 @@
+{
+ "text": "Event 13 shows P018 (Center Forward) receiving the ball for Team B. Event 14, one second later, shows the same P018 passing, but listed under Team A. Event 15 then has Team B's P528 receiving that pass, and event 25 again lists P018 as Team B. So event 14 has been assigned to the wrong team.\n\n{\"corrupt\":\"yes\",\"index\":14,\"type\":\"wrong_team\"}",
+ "usage": {
+  "prompt_tokens": 2521,
+  "completion_tokens": 138,
+  "total_tokens": 2659,
+  "cost": 0.012844,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.012844,
+   "upstream_inference_prompt_cost": 0.010084,
+   "upstream_inference_completions_cost": 0.00276
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_237",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

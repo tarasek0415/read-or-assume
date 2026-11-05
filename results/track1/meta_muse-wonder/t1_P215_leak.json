@@ -1,0 +1,29 @@
+{
+ "text": "{\"player\": \"Alberto Moreno\", \"team\": \"Liverpool\"}",
+ "usage": {
+  "prompt_tokens": 232,
+  "completion_tokens": 1386,
+  "total_tokens": 1618,
+  "cost": 0.028648,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.028648,
+   "upstream_inference_prompt_cost": 0.000928,
+   "upstream_inference_completions_cost": 0.02772
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1324,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t1_P215_leak",
+ "model": "meta/muse-wonder",
+ "track": 1
+}

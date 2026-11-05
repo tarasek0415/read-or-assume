@@ -1,0 +1,29 @@
+{
+ "text": "{\"corrupt\":\"no\",\"index\":null,\"type\":null}",
+ "usage": {
+  "prompt_tokens": 1922,
+  "completion_tokens": 91,
+  "total_tokens": 2013,
+  "cost": 0.0285675,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 1919,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0285675,
+   "upstream_inference_prompt_cost": 0.0240175,
+   "upstream_inference_completions_cost": 0.00455
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 71,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_006",
+ "model": "openai/gpt-6-astra",
+ "track": 3
+}

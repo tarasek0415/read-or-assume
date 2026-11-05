@@ -1,0 +1,29 @@
+{
+ "text": "This is a center-back profile (high clearances, aerials, low box touches), 3325 minutes in 2015/16 PL. Average position fairly central. Candidates: Wes Morgan (Leicester, 3420 mins), Robert Huth, Toby Alderweireld (3420), Jan Vertonghen, Chris Smalling (3185?), Gary Cahill, Laurent Koscielny (2970), Per Mertesacker, Winston Reid, Scott Dann, Steve Cook, Simon Francis, Craig Dawson, Jonny Evans (~2900), Ashley Williams (3420), Federico Fern\u00e1ndez, Phil Jagielka, Ciaran Clark... Progressive passes 9.26 with 41 passes \u2014 decent progression. Shots low (0.57). Aerials 4.6 is moderate\u2014not Morgan/Huth level. Huth played 3230ish. Jan Vertonghen played 3146? Alderweireld played all 38 (3420). Chris Smalling: 35 starts, ~3100. Steve Cook Bournemouth 37 games, ~3325. Simon Francis full-back. Ryan Shawcross? Dejan Lovren injured. Mamadou Sakho no. Fern\u00e1ndez 32? Gareth McAuley 36 apps.\n\nSteve Cook: 37 apps, 3325 minutes plausibly (37*90=3330). Clearances 6.55, modest passes 41 fits Bournemouth. I'll go with Steve Cook.\n\n{\"player\": \"Steve Cook\", \"team\": \"AFC Bournemouth\"}",
+ "usage": {
+  "prompt_tokens": 277,
+  "completion_tokens": 530,
+  "total_tokens": 807,
+  "cost": 0.02927,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.02927,
+   "upstream_inference_prompt_cost": 0.00277,
+   "upstream_inference_completions_cost": 0.0265
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t1_P414_leak",
+ "model": "anthropic/claude-fable-5.1",
+ "track": 1
+}

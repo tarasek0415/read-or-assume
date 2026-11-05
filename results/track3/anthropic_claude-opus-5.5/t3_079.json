@@ -1,0 +1,29 @@
+{
+ "text": "Each event is consistent with the others:\n\n- **Event 5:** Team B recovers the ball after Team A's incomplete pass at event 3. In Team B's frame the location flips: (120\u221294.4, 80\u221267.8) = (25.6, 12.2), which matches 25.7, 12.3.\n- **Event 9:** the goalkeeper carries the ball for 13 seconds, which is long but plausible.\n- **Event 24:** the goalkeeper's high pass travels about 67 units in 3.6 seconds, which is fine.\n- **Event 28:** a 47-unit carry in 7.1 seconds is fast but possible.\n- **Event 40:** a 67.6-unit pass in 4.6 seconds is fine.\n- **Events 30\u201331:** the two blocks are consistent. Team A's P168 block at 105.3, 74.6 maps to (14.7, 5.4) in Team B's frame, close to Team B's block at 13.5, 7.0.\n- **Timestamps:** these run in order throughout. The gap from 68:14 to 68:41 is the stoppage before the throw-in.\n- **Events 18\u201320:** Team A's interception at 65.7, 41.5 corresponds to (54.3, 38.5) in Team B's frame, near Team B's interception at 53.1, 38.4. The sequence is consistent.\n\n{\"corrupt\": \"no\", \"index\": null, \"type\": null}",
+ "usage": {
+  "prompt_tokens": 2617,
+  "completion_tokens": 465,
+  "total_tokens": 3082,
+  "cost": 0.019768,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.019768,
+   "upstream_inference_prompt_cost": 0.010468,
+   "upstream_inference_completions_cost": 0.0093
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_079",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

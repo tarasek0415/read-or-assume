@@ -1,0 +1,29 @@
+{
+ "text": "Looking at the events: P044 (Left Back) carries at idx 19 (69:12), but the substitution bringing on P044 occurs at idx 23 (69:24). That's a player acting before entering.\n\n{\"corrupt\": \"yes\", \"index\": 19, \"type\": \"sub_before_entry\"}",
+ "usage": {
+  "prompt_tokens": 2536,
+  "completion_tokens": 98,
+  "total_tokens": 2634,
+  "cost": 0.03026,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.03026,
+   "upstream_inference_prompt_cost": 0.02536,
+   "upstream_inference_completions_cost": 0.0049
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_047",
+ "model": "anthropic/claude-fable-5.1",
+ "track": 3
+}

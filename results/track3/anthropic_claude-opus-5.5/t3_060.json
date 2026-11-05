@@ -1,0 +1,29 @@
+{
+ "text": "Event 20 is the problem. It is a corner taken by P299, who is listed as Team A's goalkeeper. A goalkeeper taking a corner is implausible, so this matches the keeper_corner corruption type.\n\n{\"corrupt\": \"yes\", \"index\": 20, \"type\": \"keeper_corner\"}",
+ "usage": {
+  "prompt_tokens": 2581,
+  "completion_tokens": 102,
+  "total_tokens": 2683,
+  "cost": 0.012364,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.012364,
+   "upstream_inference_prompt_cost": 0.010324,
+   "upstream_inference_completions_cost": 0.00204
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_060",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

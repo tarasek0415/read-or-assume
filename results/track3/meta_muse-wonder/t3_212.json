@@ -1,0 +1,29 @@
+{
+ "text": "{\"corrupt\": \"yes\", \"index\": 19, \"type\": \"sub_before_entry\"}",
+ "usage": {
+  "prompt_tokens": 1899,
+  "completion_tokens": 639,
+  "total_tokens": 2538,
+  "cost": 0.020376,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.020376,
+   "upstream_inference_prompt_cost": 0.007596,
+   "upstream_inference_completions_cost": 0.01278
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 593,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_212",
+ "model": "meta/muse-wonder",
+ "track": 3
+}

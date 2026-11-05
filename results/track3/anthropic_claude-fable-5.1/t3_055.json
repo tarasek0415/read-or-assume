@@ -1,0 +1,29 @@
+{
+ "text": "Looking for inconsistencies: event 10 is a pass from 51.7,7.8 to 116.7,3.8 (~65m) with duration 0.5s \u2014 impossibly fast. Also the receipt at idx 11 is at 68.6,3.8, inconsistent with end location, indicating the end location/duration was altered.\n\n{\"corrupt\": \"yes\", \"index\": 10, \"type\": \"fast_long_pass\"}",
+ "usage": {
+  "prompt_tokens": 2535,
+  "completion_tokens": 138,
+  "total_tokens": 2673,
+  "cost": 0.03225,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.03225,
+   "upstream_inference_prompt_cost": 0.02535,
+   "upstream_inference_completions_cost": 0.0069
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_055",
+ "model": "anthropic/claude-fable-5.1",
+ "track": 3
+}

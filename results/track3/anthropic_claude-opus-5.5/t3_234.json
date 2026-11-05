@@ -1,0 +1,29 @@
+{
+ "text": "Event 13 is a corner kick (Corner Out High Pass from 120.0,0.1) taken by Team A's goalkeeper, P445. Goalkeepers do not take corners, so this is the keeper_corner corruption.\n\n{\"corrupt\": \"yes\", \"index\": 13, \"type\": \"keeper_corner\"}",
+ "usage": {
+  "prompt_tokens": 2498,
+  "completion_tokens": 107,
+  "total_tokens": 2605,
+  "cost": 0.012132,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.012132,
+   "upstream_inference_prompt_cost": 0.009992,
+   "upstream_inference_completions_cost": 0.00214
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_234",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

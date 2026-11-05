@@ -1,0 +1,29 @@
+{
+ "text": "Looking for inconsistencies.\n\nEvent 17: Team B | P043 (Right Center Midfield) | Pass Recovery Low Pass 27.1,33.4 -> 19.7,52.8, received by Team A P390 at 19.7,52.8. Event 22 shows P043 (Right Center Midfield) as Team A. So event 17 has the wrong team \u2014 P043 belongs to Team A, and the pass is completed to a Team A player at matching coordinates.\n\n{\"corrupt\": \"yes\", \"index\": 17, \"type\": \"wrong_team\"}",
+ "usage": {
+  "prompt_tokens": 2506,
+  "completion_tokens": 185,
+  "total_tokens": 2691,
+  "cost": 0.03431,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.03431,
+   "upstream_inference_prompt_cost": 0.02506,
+   "upstream_inference_completions_cost": 0.00925
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_291",
+ "model": "anthropic/claude-fable-5.1",
+ "track": 3
+}

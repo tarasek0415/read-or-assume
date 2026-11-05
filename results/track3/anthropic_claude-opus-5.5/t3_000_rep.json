@@ -1,0 +1,29 @@
+{
+ "text": "Event 17 is a Goal Keeper \"Goal Conceded\" with no preceding shot. The sequence before it is a blocked pass, then a goalkeeper event, and play then continues with a Team A left back receiving the ball near the corner flag, which looks like a corner. A conceded goal with no shot fits the goal_no_shot corruption. It could have been an original keeper event (such as a save) that was altered.\n\n{\"corrupt\": \"yes\", \"index\": 17, \"type\": \"goal_no_shot\"}",
+ "usage": {
+  "prompt_tokens": 2508,
+  "completion_tokens": 166,
+  "total_tokens": 2674,
+  "cost": 0.013352,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.013352,
+   "upstream_inference_prompt_cost": 0.010032,
+   "upstream_inference_completions_cost": 0.00332
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_000_rep",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

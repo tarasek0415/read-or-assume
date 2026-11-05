@@ -1,0 +1,29 @@
+{
+ "text": "This profile (very high key passes 3.74, average x=77, low defensive actions, moderate shots) looks like Mesut \u00d6zil 2015/16 \u2014 an attacking midfielder/winger. Position group: midfielder.\n\n{\"position\": \"midfielder\"}",
+ "usage": {
+  "prompt_tokens": 280,
+  "completion_tokens": 84,
+  "total_tokens": 364,
+  "cost": 0.007,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.007,
+   "upstream_inference_prompt_cost": 0.0028,
+   "upstream_inference_completions_cost": 0.0042
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t1_P480_none",
+ "model": "anthropic/claude-fable-5.1",
+ "track": 1
+}

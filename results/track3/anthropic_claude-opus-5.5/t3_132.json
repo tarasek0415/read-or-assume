@@ -1,0 +1,29 @@
+{
+ "text": "Event 10 shows Team B's goalkeeper, P010, taking a corner from the corner flag (120.0,0.1). A goalkeeper taking a corner is implausible, which matches the keeper_corner corruption type.\n\n{\"corrupt\": \"yes\", \"index\": 10, \"type\": \"keeper_corner\"}",
+ "usage": {
+  "prompt_tokens": 2507,
+  "completion_tokens": 105,
+  "total_tokens": 2612,
+  "cost": 0.012128,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.012128,
+   "upstream_inference_prompt_cost": 0.010028,
+   "upstream_inference_completions_cost": 0.0021
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_132",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

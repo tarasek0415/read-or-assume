@@ -1,0 +1,29 @@
+{
+ "text": "{\"corrupt\": \"yes\", \"index\": 17, \"type\": \"goal_no_shot\"}",
+ "usage": {
+  "prompt_tokens": 1911,
+  "completion_tokens": 723,
+  "total_tokens": 2634,
+  "cost": 0.022104,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.022104,
+   "upstream_inference_prompt_cost": 0.007644,
+   "upstream_inference_completions_cost": 0.01446
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 655,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_245",
+ "model": "meta/muse-wonder",
+ "track": 3
+}

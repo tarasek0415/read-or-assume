@@ -1,0 +1,29 @@
+{
+ "text": "Attacking midfielder/winger with moderate defensive work, low passes, 2602 minutes in 2015/16 PL. Average position x=77 central-ish (y=51 slightly right). Low passes per 90 (24) suggests a counter-attacking team. Key passes 1.25, shots 1.14, box touches 8.47. Candidates: Leicester's Riyad Mahrez (3154 mins, more shots), Shinji Okazaki (more box touches less key passes), Marc Albrighton (2832 mins, left wing). Could be Watford's... Low passes, moderate tackles 1.69, interceptions 1.28 \u2014 hardworking winger. Yannick Bolasie (Crystal Palace, 2015/16 ~2000 mins). Jason Puncheon (Palace, ~2600 mins, central/right, passes higher though). Albrighton: tackles decent, key passes ~1.5, shots ~0.9. Albrighton played left though; y=51 is slightly right of center. Puncheon was right side for Palace. Puncheon 2015/16: 31 appearances, ~2500 minutes, 1 goal... shots low-ish. I'll go with Jason Puncheon.\n\n{\"player\": \"Jason Puncheon\", \"team\": \"Crystal Palace\"}",
+ "usage": {
+  "prompt_tokens": 277,
+  "completion_tokens": 428,
+  "total_tokens": 705,
+  "cost": 0.02417,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.02417,
+   "upstream_inference_prompt_cost": 0.00277,
+   "upstream_inference_completions_cost": 0.0214
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t1_P067_leak",
+ "model": "anthropic/claude-fable-5.1",
+ "track": 1
+}

@@ -1,0 +1,29 @@
+{
+ "text": "{\"player\": \"Joe Allen\", \"team\": \"Liverpool\"}",
+ "usage": {
+  "prompt_tokens": 232,
+  "completion_tokens": 809,
+  "total_tokens": 1041,
+  "cost": 0.017108,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.017108,
+   "upstream_inference_prompt_cost": 0.000928,
+   "upstream_inference_completions_cost": 0.01618
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 768,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t1_P018_leak",
+ "model": "meta/muse-wonder",
+ "track": 1
+}

@@ -1,0 +1,29 @@
+{
+ "text": "Event 20 is the corrupted one. It is labelled Team A, but its player, P259, is Team B's Right Wing, and P259 is shown carrying the ball for Team B in the event just before it. The pass then goes to P247, Team B's goalkeeper, which is a Team B back-pass. So the team label on event 20 is wrong.\n\n{\"corrupt\": \"yes\", \"index\": 20, \"type\": \"wrong_team\"}",
+ "usage": {
+  "prompt_tokens": 2550,
+  "completion_tokens": 141,
+  "total_tokens": 2691,
+  "cost": 0.01302,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.01302,
+   "upstream_inference_prompt_cost": 0.0102,
+   "upstream_inference_completions_cost": 0.00282
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_110_rep",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 3
+}

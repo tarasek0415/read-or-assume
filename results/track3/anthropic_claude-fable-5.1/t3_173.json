@@ -1,0 +1,29 @@
+{
+ "text": "Looking at the events: idx 10 shows Team A's Goalkeeper (P131) taking a corner at 120,80 \u2014 a keeper taking a corner in the opposition half is implausible, and idx 17 also has P131 passing from 29.1,75.8 shortly after. The corner by the goalkeeper is the corruption (keeper_corner).\n\n{\"corrupt\": \"yes\", \"index\": 10, \"type\": \"keeper_corner\"}",
+ "usage": {
+  "prompt_tokens": 2559,
+  "completion_tokens": 145,
+  "total_tokens": 2704,
+  "cost": 0.03284,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.03284,
+   "upstream_inference_prompt_cost": 0.02559,
+   "upstream_inference_completions_cost": 0.00725
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t3_173",
+ "model": "anthropic/claude-fable-5.1",
+ "track": 3
+}

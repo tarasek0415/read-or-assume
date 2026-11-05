@@ -1,0 +1,29 @@
+{
+ "text": "{\"possession_above_avg\":\"no\",\"shots_for_above_avg\":\"no\",\"shots_against_below_avg\":\"no\",\"xg_for_above_avg\":\"no\",\"xg_against_below_avg\":\"no\",\"presses_higher\":\"no\",\"ppda_more_aggressive\":\"yes\",\"positive_xg_diff\":\"no\",\"predicted_finish\":4}",
+ "usage": {
+  "prompt_tokens": 568,
+  "completion_tokens": 298,
+  "total_tokens": 866,
+  "cost": 0.008232,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.008232,
+   "upstream_inference_prompt_cost": 0.002272,
+   "upstream_inference_completions_cost": 0.00596
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 186,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t2_CrystalPalace_big",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 2
+}
