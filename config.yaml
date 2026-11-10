@@ -20,6 +20,7 @@ models:
     price_out: 20.0
     reasoning: minimal   # cannot think less than ~500 tokens per call, so only track 2 is affordable
 
+version: "v2"          # prompts/, results/ and reports/ each get a folder per version
 seed: 2016            # one seed for anonymisation, sampling, shuffling and plants
 repeat_fraction: 0.2  # share of prompts sent twice to measure self-agreement
 max_tokens: 300

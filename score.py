@@ -14,7 +14,7 @@ import numpy as np
 
 import prompts
 
-RESULTS = Path(__file__).parent / "results"
+RESULTS = Path(__file__).parent / "results" / prompts.CFG["version"]
 
 
 def parse(text: str | None) -> dict | None:

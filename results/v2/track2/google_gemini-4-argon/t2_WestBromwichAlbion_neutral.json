@@ -1,0 +1,29 @@
+{
+ "text": "{\"possession_above_avg\": \"no\", \"shots_for_above_avg\": \"no\", \"shots_against_below_avg\": \"no\", \"xg_for_above_avg\": \"no\", \"xg_against_below_avg\": \"no\", \"presses_higher\": \"no\", \"ppda_more_aggressive\": \"no\", \"positive_xg_diff\": \"no\", \"predicted_finish\": 15}",
+ "usage": {
+  "prompt_tokens": 514,
+  "completion_tokens": 101,
+  "total_tokens": 615,
+  "cost": 0.002038,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.002038,
+   "upstream_inference_prompt_cost": 0.001028,
+   "upstream_inference_completions_cost": 0.00101
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t2_WestBromwichAlbion_neutral",
+ "model": "google/gemini-4-argon",
+ "track": 2
+}

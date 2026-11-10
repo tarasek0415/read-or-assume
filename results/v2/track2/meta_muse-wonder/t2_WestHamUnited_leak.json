@@ -1,0 +1,29 @@
+{
+ "text": "{\"team\": \"West Ham United\"}",
+ "usage": {
+  "prompt_tokens": 236,
+  "completion_tokens": 343,
+  "total_tokens": 579,
+  "cost": 0.007804,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.007804,
+   "upstream_inference_prompt_cost": 0.000944,
+   "upstream_inference_completions_cost": 0.00686
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 302,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t2_WestHamUnited_leak",
+ "model": "meta/muse-wonder",
+ "track": 2
+}

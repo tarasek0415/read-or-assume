@@ -49,7 +49,7 @@ def track3_excerpt(ev: pd.DataFrame, gks: dict, plant: str | None, rng: random.R
     anchor = _anchor(ev, plant, rng)
     if anchor is None:
         return None, None
-    start = max(0, min(anchor - rng.randint(8, 20), len(ev) - WINDOW - 2))
+    start = max(0, min(anchor - rng.randint(*_offset_range(ev, anchor, plant)), len(ev) - WINDOW - 2))
     ex = ev.iloc[start:start + WINDOW + 2].copy().reset_index(drop=True)  # 2 spare rows
     i = anchor - start
     teams = list(dict.fromkeys(ev.team.dropna()))
@@ -78,6 +78,23 @@ def track3_excerpt(ev: pd.DataFrame, gks: dict, plant: str | None, rng: random.R
         ex = ex.drop(drop).reset_index(drop=True)
     ex = ex.iloc[:WINDOW].reset_index(drop=True)
     return ex, (None if plant is None else i + 1)
+
+
+def _offset_range(ev, anchor, plant) -> tuple[int, int]:
+    """Rows of the window the plant may sit on (0-based), as wide as each plant allows.
+
+    A goal with no shot needs the 8 rows before it on screen, or the shot could be
+    just out of view. A substitution must still be in the window after its plant,
+    and a deleted goal needs the rows that follow it.
+    """
+    if plant == "goal_no_shot":
+        return 8, WINDOW - 1
+    if plant == "sub_before_entry":
+        sub = ev.index[(ev.type == "Substitution") & (ev.index > anchor)][0]
+        return 0, WINDOW - 1 - (sub - anchor)
+    if plant == "deleted_goal":
+        return 0, WINDOW - 4
+    return 0, WINDOW - 1
 
 
 def _anchor(ev, plant, rng):

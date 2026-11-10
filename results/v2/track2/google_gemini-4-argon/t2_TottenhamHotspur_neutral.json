@@ -1,0 +1,29 @@
+{
+ "text": "{\"possession_above_avg\": \"yes\", \"shots_for_above_avg\": \"yes\", \"shots_against_below_avg\": \"yes\", \"xg_for_above_avg\": \"yes\", \"xg_against_below_avg\": \"yes\", \"presses_higher\": \"yes\", \"ppda_more_aggressive\": \"yes\", \"positive_xg_diff\": \"yes\", \"predicted_finish\": 3}",
+ "usage": {
+  "prompt_tokens": 515,
+  "completion_tokens": 100,
+  "total_tokens": 615,
+  "cost": 0.00203,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00203,
+   "upstream_inference_prompt_cost": 0.00103,
+   "upstream_inference_completions_cost": 0.001
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t2_TottenhamHotspur_neutral",
+ "model": "google/gemini-4-argon",
+ "track": 2
+}

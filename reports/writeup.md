@@ -1,6 +1,6 @@
 # read-or-assume: do LLMs read football data or assume?
 
-v1 results, 5 November 2026. Data: StatsBomb open data, Premier League 2015/16 (380 matches,
+v1 results, 5 November 2026; v2 track 2 rerun, 10 November 2026. Data: StatsBomb open data, Premier League 2015/16 (380 matches,
 1.3M events). Credit StatsBomb; used under their non-commercial licence.
 
 ## Question
@@ -29,7 +29,7 @@ All grading is code against known truth. No model judges anything.
 - Models: Claude Opus 5.5 and Gemini 4 Argon on everything; Muse Wonder on track 2, 450 of
   the 652 track 1 calls and 100 of the 360 track 3 calls (thinking tokens made it ~10x the
   price per call). Claude Fable 5.1, GPT-6 Astra and Claude Haiku 5.5: 20-call samples only.
-- Total spend: about $21 on OpenRouter.
+- Total spend: about $21 on OpenRouter for v1, $1.42 for the v2 track 2 rerun.
 
 ## Results
 
@@ -60,7 +60,10 @@ All grading is code against known truth. No model judges anything.
   the season. For track 1 this is a limit, not a flaw in the headline, since a known player
   makes a false label *easier* to reject.
 
-### Track 2: facts are read correctly, judgments move with the club name
+### Track 2 (v1): facts are read correctly, judgments move with the club name
+
+v1 prompts named the season ("Premier League 2015/16"). The v2 rerun below shows most of
+this effect was the models recalling that season, so read this table with that section.
 
 | | Opus 5.5 | Gemini 4 | Muse Wonder |
 |---|---|---|---|
@@ -75,13 +78,38 @@ All grading is code against known truth. No model judges anything.
   so the name never flipped a factual answer. Reading numbers against a stated average is
   solved.
 - The judgment question moved. With identical numbers, a small-club name pushed the
-  predicted finish 4-6 places lower for every model. A big-club name pulled it 2-5 places
-  higher for Opus and Muse. Gemini went the other way with big names, which is consistent
-  with it recognising the real team and treating the famous name as a mismatch.
+  predicted finish 4-6 places lower for every model. The big-club result was mixed. Both
+  turned out to be mostly memory: given "Chelsea" and "2015/16", all three models answered
+  10th, Chelsea's real finish that season, for numbers that say top three.
 - Leakage is high: 55-75% of teams were named from "Team K" profiles. The models know
   this season. The flip rate is still a fair test (the numbers are identical across
   conditions), but "neutral" is not blind, and the finish predictions in the neutral
   condition are partly memory (error of 1-2 places).
+
+### Track 2 (v2): without the season, the name effect shrinks to 1-2 places
+
+The v2 prompts say "Premier League" with no season. Everything else is word-for-word the
+same as v1, so the two runs compare directly.
+
+| | Opus 5.5 | Gemini 4 | Muse Wonder |
+|---|---|---|---|
+| accuracy on 8 yes/no questions, any condition | 1.00 | 1.00 | 1.00 |
+| flip rate when only the name changes | 0.00 | 0.00 | 0.00 |
+| predicted-finish error, "Team K" (places) | 2.0 [1.3, 2.8] | 1.7 [1.0, 2.5] | 2.5 [1.6, 3.5] |
+| shift in predicted finish, big-club name | -1.3 [-1.7, -0.8] | -0.5 [-1.1, 0.3] | -0.9 [-1.6, -0.3] |
+| shift in predicted finish, small-club name | +0.9 [0.4, 1.4] | +2.1 [0.6, 3.9] | +0.7 [0.1, 1.3] |
+| leakage (named the club from "Team K") | 0.00 | 0.10 [0.00, 0.25] | 0.10 [0.00, 0.25] |
+| self-agreement (16 repeats) | 0.81 [0.62, 1.00] | 0.81 [0.56, 1.00] | 0.50 [0.25, 0.75] |
+
+- Removing one line of context cut the small-club penalty from 4-6 places to 1-2, and team
+  leakage from 55-75% to 0-10%. Most of the v1 effect was recall of the 2015/16 table.
+- What remains is small but consistent: a small-club name costs about a place, a big-club
+  name gains about a place, for all three models. Gemini's big-club range and Muse's
+  self-agreement (50% on 16 repeats) make those two the weakest parts of the result.
+- Liverpool's season (8th in reality) as an example. v1: "Team K" 3rd, "Chelsea" 10th from
+  all three models. v2: "Team K" 3rd-4th, "Chelsea" 3rd from all three.
+- The benchmark caught its own confound: stating the season let the models answer from
+  memory, and the counterfactual design showed how much.
 
 ### Track 3: planted errors are a solved problem for the top models
 
@@ -107,13 +135,14 @@ All grading is code against known truth. No model judges anything.
 
 1. On explicit facts, current top models read the data. False labels and club names do not
    change factual answers.
-2. On judgments, the hint leaks in. The same season gets a different predicted finish
-   depending on the name on top. That is the gap a product built on these models should
-   guard: present the facts, do not let the model infer the rest.
+2. On judgments, the hint leaks in a little. Without the season, a club name moves a
+   predicted finish by about one place. With the season, memory of the real table moved
+   it by four to six. Context that invites recall is a bigger risk than the name itself.
 3. "Didn't follow the wrong hint" is not the same as "read the data". Muse's true-label
    result shows a model can resist hints by reflex. A control with a *correct* hint is
    needed to tell the two apart.
-4. Anonymisation of a famous season is leaky. Names can be removed; the season cannot.
+4. Anonymisation of a famous season is leaky, and stating the season makes it much worse.
+   Team leakage fell from 55-75% to 0-10% when the season was dropped from the prompt.
 
 ## Limits
 
@@ -121,7 +150,10 @@ All grading is code against known truth. No model judges anything.
   post-cutoff season would test reading with less memory available.
 - Track 3 is saturated for top models; harder plants (subtler coordinates, two plants,
   longer excerpts) are needed to see differences.
-- Muse Wonder is partial on tracks 1 and 3 and has no self-agreement estimate.
+- Muse Wonder is partial on tracks 1 and 3 and has no self-agreement estimate there.
+- v1 tracks 1 and 3 still name the season. Track 1 has not been rerun without it.
+- In v1 track 3 every plant sat between rows 9 and 21 of 40. v2 code spreads plants over
+  all 40 rows, but track 3 has not been rerun yet because of cost.
 - Low reasoning effort was forced by cost. Results may differ with full reasoning.
 - Position truth is the lineup position, which is itself a label; a false 9 or inverted
   full-back is scored by the team sheet, not by how they played.
@@ -129,5 +161,6 @@ All grading is code against known truth. No model judges anything.
 
 ## Reproduce
 
-See README.md. Prompts are in prompts/, every raw answer in results/, scores in
-results/scores.json, tables and charts in reports/.
+See README.md. Each version has its own folder: prompts/v1/ and prompts/v2/, raw answers in
+results/v1/ and results/v2/, scores in results/<version>/scores.json, tables and charts in
+reports/v1/ and reports/v2/. The version to build and run is set in config.yaml.

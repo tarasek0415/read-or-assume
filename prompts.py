@@ -2,7 +2,7 @@
 
 A prompt record is a dict: id, track, condition, group, truth, system, user.
 `truth` never goes to the model; score.py compares the answer with it.
-Run `python prompts.py` to (re)build prompts/track{1,2,3}.jsonl.
+Run `python prompts.py` to (re)build prompts/<version>/track{1,2,3}.jsonl.
 """
 import json
 import random
@@ -17,7 +17,7 @@ import perturb
 import profiles
 
 CFG = yaml.safe_load(open(Path(__file__).parent / "config.yaml"))
-OUT = Path(__file__).parent / "prompts"
+OUT = Path(__file__).parent / "prompts" / CFG["version"]
 SYSTEM = ("You are a football data analyst. Answer with a single JSON object and nothing "
           "else: no prose, no markdown fences.")
 
@@ -52,7 +52,7 @@ def track1(seed: int) -> list[dict]:
 
 
 def _player_text(p) -> str:
-    lines = [f"Premier League 2015/16, outfield player, {p.minutes} minutes played. Per 90 minutes:"]
+    lines = [f"Premier League season, outfield player, {p.minutes} minutes played. Per 90 minutes:"]
     for s in profiles.PLAYER_STATS:
         lines.append(f"  {s.replace('_', ' ')}: {p[s]}")
     lines.append(f"  average position: x={p.avg_x}, y={p.avg_y} (pitch 120x80, attacking left to right)")
@@ -108,7 +108,7 @@ def track2(seed: int) -> list[dict]:
 
 
 def _team_text(t, mean, name) -> str:
-    lines = [f"Premier League 2015/16 season summary for {name} (all numbers per 90 minutes "
+    lines = [f"Premier League season summary for {name} (all numbers per 90 minutes "
              "unless stated). League average in brackets."]
     for s in profiles.TEAM_STATS:
         lines.append(f"  {s.replace('_', ' ')}: {t[s]}  [{round(mean[s], 2)}]")
@@ -139,7 +139,7 @@ def track3(seed: int) -> list[dict]:
         teams = list(dict.fromkeys(m.team.dropna()))
         tmap = {teams[0]: "Team A", teams[1]: "Team B"}
         lines = [_event_line(i + 1, r, tmap, ids["player"]) for i, r in ex.iterrows()]
-        user = ("40 consecutive events from one Premier League 2015/16 match (StatsBomb format). "
+        user = ("40 consecutive events from one Premier League match (StatsBomb format). "
                 "Columns: idx | period minute:second | team | player (position) | type | detail | "
                 "start x,y -> end x,y (pitch 120x80, each team attacks left to right) | duration s\n\n"
                 + "\n".join(lines)
@@ -171,7 +171,7 @@ def build_all():
     seed = CFG["seed"]
     lu = data.lineups()
     anonymize.build(lu.player.tolist(), lu.team.tolist(), seed)
-    OUT.mkdir(exist_ok=True)
+    OUT.mkdir(parents=True, exist_ok=True)
     for n, fn in [(1, track1), (2, track2), (3, track3)]:
         recs = fn(seed)
         with open(OUT / f"track{n}.jsonl", "w") as f:

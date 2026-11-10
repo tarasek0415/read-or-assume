@@ -1,0 +1,29 @@
+{
+ "text": "{\"possession_above_avg\":\"yes\",\"shots_for_above_avg\":\"no\",\"shots_against_below_avg\":\"no\",\"xg_for_above_avg\":\"no\",\"xg_against_below_avg\":\"no\",\"presses_higher\":\"yes\",\"ppda_more_aggressive\":\"no\",\"positive_xg_diff\":\"no\",\"predicted_finish\":12}",
+ "usage": {
+  "prompt_tokens": 562,
+  "completion_tokens": 113,
+  "total_tokens": 675,
+  "cost": 0.004508,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.004508,
+   "upstream_inference_prompt_cost": 0.002248,
+   "upstream_inference_completions_cost": 0.00226
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t2_SwanseaCity_big",
+ "model": "anthropic/claude-opus-5.5",
+ "track": 2
+}

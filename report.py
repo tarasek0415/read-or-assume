@@ -5,9 +5,11 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import yaml
 
 ROOT = Path(__file__).parent
-OUT = ROOT / "reports"
+VERSION = yaml.safe_load(open(ROOT / "config.yaml"))["version"]
+OUT = ROOT / "reports" / VERSION
 HEADLINES = {  # track -> metrics worth a chart (name, label)
     1: [("false/all/label_follow", "Label-follow rate under false label"),
         ("none/all/accuracy", "Accuracy with no label")],
@@ -22,9 +24,9 @@ HEADLINES = {  # track -> metrics worth a chart (name, label)
 
 
 def main():
-    scores = json.loads((ROOT / "results" / "scores.json").read_text())
-    OUT.mkdir(exist_ok=True)
-    md = ["# read-or-assume results\n", "Data: StatsBomb open data, Premier League 2015/16. "
+    scores = json.loads((ROOT / "results" / VERSION / "scores.json").read_text())
+    OUT.mkdir(parents=True, exist_ok=True)
+    md = ["# read-or-assume results\n", f"Data: StatsBomb open data, Premier League 2015/16. Version {VERSION}. "
           "Ranges are 95% bootstrap intervals over items.\n"]
     for t in (1, 2, 3):
         rows = {k.split("/", 1)[1]: v for k, v in scores.items() if k.startswith(f"track{t}/")}

@@ -1,0 +1,29 @@
+{
+ "text": "{\"possession_above_avg\": \"yes\", \"shots_for_above_avg\": \"yes\", \"shots_against_below_avg\": \"yes\", \"xg_for_above_avg\": \"yes\", \"xg_against_below_avg\": \"yes\", \"presses_higher\": \"yes\", \"ppda_more_aggressive\": \"yes\", \"positive_xg_diff\": \"yes\", \"predicted_finish\": 3}",
+ "usage": {
+  "prompt_tokens": 430,
+  "completion_tokens": 326,
+  "total_tokens": 756,
+  "cost": 0.00824,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00824,
+   "upstream_inference_prompt_cost": 0.00172,
+   "upstream_inference_completions_cost": 0.00652
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 230,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t2_Liverpool_big",
+ "model": "meta/muse-wonder",
+ "track": 2
+}

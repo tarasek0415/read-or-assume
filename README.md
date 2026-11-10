@@ -18,7 +18,7 @@ Credit StatsBomb; non-commercial licence.
 ```
 cp .env.example .env            # put OPENROUTER_API_KEY in it
 uv run python data.py           # download + cache the season (once, ~15 min)
-uv run python prompts.py        # build prompts/track{1,2,3}.jsonl
+uv run python prompts.py        # build prompts/<version>/track{1,2,3}.jsonl
 uv run python run.py --track 1 --model anthropic/claude-haiku-5.5 --limit 20
 uv run python score.py && uv run python report.py
 ```

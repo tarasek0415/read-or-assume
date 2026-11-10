@@ -24,7 +24,7 @@ CFG = yaml.safe_load(open(ROOT / "config.yaml"))
 BASE_URL = "https://openrouter.ai/api/v1"  # fixed in code on purpose; never read from env
 KEY_VAR = "OPENROUTER_API_KEY"
 ENV_FILE = ROOT / ".env"
-RESULTS = ROOT / "results"
+RESULTS = ROOT / "results" / CFG["version"]
 
 
 def startup() -> str:
@@ -99,8 +99,10 @@ def main():
             sys.exit("estimate exceeds spend.hard_cap_usd in config.yaml; lower --limit")
         key = startup()
         left = balance(key)
-        print(f"credits left: ${left:.2f}" if left is not None else "credits left: unknown")
-        if left is not None and left - est < CFG["spend"]["reserve_usd"]:
+        if left is None:
+            sys.exit("could not read the account balance (expired key or no network); not spending blind")
+        print(f"credits left: ${left:.2f}")
+        if left - est < CFG["spend"]["reserve_usd"]:
             sys.exit("not enough credit for this batch; lower --limit or top up")
         if input(f"send {len(todo)} calls to {m['id']} (~${est:.2f})? [y/N] ").lower() != "y":
             continue
