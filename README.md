@@ -20,11 +20,12 @@ Full write-up: [reports/writeup.md](reports/writeup.md).
   half the time: not following a wrong hint is not the same as reading the data.
 - Club names moved predicted finish 4-6 places until the season was dropped from the
   prompt, then 1-2: most of the effect was memory of the real table.
-- Open-weight models changed fixed, factual answers on 10-16% of questions when only the
-  club name changed (closed models: 0%), and one moved a big club up ~6 places.
+- Open-weight models moved predictions more when only the club name changed (2-6 places
+  vs ~1 for closed models), and two of three changed fixed, factual answers on 10-16% of
+  questions (closed models: 0%).
 - Planted data errors are found at ceiling; false alarms on clean data separate the models
   (3% / 10% / 22%).
-- Total cost $22.19, open-weight runs free. See the Cost and Future scope sections.
+- Total cost $22.28; the open-weight runs cost $0.09. See the Cost and Future scope sections.
 
 ## Run
 ```

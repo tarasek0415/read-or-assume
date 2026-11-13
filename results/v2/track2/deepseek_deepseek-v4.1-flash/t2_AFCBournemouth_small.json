@@ -1,0 +1,29 @@
+{
+ "text": "{\"possession_above_avg\":\"yes\",\"shots_for_above_avg\":\"no\",\"shots_against_below_avg\":\"yes\",\"xg_for_above_avg\":\"no\",\"xg_against_below_avg\":\"yes\",\"presses_higher\":\"yes\",\"ppda_more_aggressive\":\"no\",\"positive_xg_diff\":\"no\",\"predicted_finish\":14}",
+ "usage": {
+  "prompt_tokens": 425,
+  "completion_tokens": 82,
+  "total_tokens": 507,
+  "cost": 0.00010855,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00010855,
+   "upstream_inference_prompt_cost": 5.525e-05,
+   "upstream_inference_completions_cost": 5.33e-05
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t2_AFCBournemouth_small",
+ "model": "deepseek/deepseek-v4.1-flash",
+ "track": 2
+}

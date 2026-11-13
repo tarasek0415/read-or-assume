@@ -91,6 +91,98 @@
    "n": 20
   }
  },
+ "track2/deepseek_deepseek-v4.1-flash": {
+  "bad_format": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 96
+  },
+  "self_agreement": {
+   "mean": 0.875,
+   "lo": 0.688,
+   "hi": 1.0,
+   "n": 16
+  },
+  "leak_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 20
+  },
+  "neutral/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 160
+  },
+  "neutral/finish_mae": {
+   "mean": 3.0,
+   "lo": 2.05,
+   "hi": 4.15,
+   "n": 20
+  },
+  "big/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 160
+  },
+  "big/finish_mae": {
+   "mean": 4.25,
+   "lo": 3.05,
+   "hi": 5.65,
+   "n": 20
+  },
+  "big/flip_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 160
+  },
+  "big/flips_toward_yes": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "big/finish_shift_vs_neutral": {
+   "mean": -2.35,
+   "lo": -4.3,
+   "hi": -0.7,
+   "n": 20
+  },
+  "small/accuracy": {
+   "mean": 1.0,
+   "lo": 1.0,
+   "hi": 1.0,
+   "n": 160
+  },
+  "small/finish_mae": {
+   "mean": 5.45,
+   "lo": 3.35,
+   "hi": 7.801,
+   "n": 20
+  },
+  "small/flip_rate": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 160
+  },
+  "small/flips_toward_yes": {
+   "mean": null,
+   "lo": null,
+   "hi": null,
+   "n": 0
+  },
+  "small/finish_shift_vs_neutral": {
+   "mean": 3.15,
+   "lo": 0.65,
+   "hi": 6.4,
+   "n": 20
+  }
+ },
  "track2/google_gemini-4-argon": {
   "bad_format": {
    "mean": 0.0,

@@ -1,0 +1,29 @@
+{
+ "text": "{\n  \"possession_above_avg\": \"no\",\n  \"shots_for_above_avg\": \"yes\",\n  \"shots_against_below_avg\": \"no\",\n  \"xg_for_above_avg\": \"yes\",\n  \"xg_against_below_avg\": \"no\",\n  \"presses_higher\": \"no\",\n  \"ppda_more_aggressive\": \"no\",\n  \"positive_xg_diff\": \"no\",\n  \"predicted_finish\": 10\n}",
+ "usage": {
+  "prompt_tokens": 425,
+  "completion_tokens": 110,
+  "total_tokens": 535,
+  "cost": 0.0001038,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0001038,
+   "upstream_inference_prompt_cost": 5.1e-05,
+   "upstream_inference_completions_cost": 5.28e-05
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t2_WestHamUnited_neutral",
+ "model": "deepseek/deepseek-v4.1-flash",
+ "track": 2
+}

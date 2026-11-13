@@ -36,6 +36,7 @@ models:
   - id: deepseek/deepseek-v4.1-flash   # paid but cheap; track 2 only
     price_in: 0.30
     price_out: 1.20
+    reasoning: "off"    # with low effort it used the whole 1,500-token budget on 79% of calls
 
 version: "v2"          # prompts/, results/ and reports/ each get a folder per version
 seed: 2016            # one seed for anonymisation, sampling, shuffling and plants
