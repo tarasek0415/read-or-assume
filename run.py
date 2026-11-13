@@ -48,12 +48,20 @@ def call(key: str, m: dict, system: str, user: str) -> dict:
     else:  # the top models refuse to switch thinking off: a bigger budget, low effort
         body |= {"reasoning": {"effort": effort}, "max_tokens": CFG["max_tokens_with_reasoning"]}
     headers = {"Authorization": f"Bearer {key}"}  # no referer/title/session/user fields
-    for attempt in range(4):
-        r = httpx.post(f"{BASE_URL}/chat/completions", json=body, headers=headers, timeout=120)
+    for attempt in range(6):
+        try:
+            r = httpx.post(f"{BASE_URL}/chat/completions", json=body, headers=headers, timeout=180)
+        except httpx.HTTPError as e:
+            time.sleep(2 ** attempt)
+            continue
         if r.status_code == 200:
             d = r.json()
-            return {"text": d["choices"][0]["message"]["content"], "usage": d.get("usage", {})}
-        time.sleep(2 ** attempt)
+            if "choices" in d:
+                return {"text": d["choices"][0]["message"]["content"], "usage": d.get("usage", {})}
+        if r.status_code == 429 and "per-day" in r.text:  # free models: daily cap, waiting won't help
+            return {"text": None, "error": "daily_limit", "usage": {}}
+        # 429 (free models allow ~20 a minute) gets a longer wait than other errors
+        time.sleep(15 * (attempt + 1) if r.status_code == 429 else 2 ** attempt)
     return {"text": None, "error": f"{r.status_code} {r.text[:200]}", "usage": {}}
 
 
@@ -78,9 +86,12 @@ def main():
     ap.add_argument("--model", default="all")
     ap.add_argument("--limit", type=int, help="only the first N prompts (after shuffling)")
     ap.add_argument("--estimate", action="store_true", help="print cost estimate and exit")
+    ap.add_argument("--version", default=CFG["version"], help="prompt/result folder, e.g. v1 or v2")
     a = ap.parse_args()
+    global RESULTS
+    RESULTS = ROOT / "results" / a.version
 
-    recs = prompts.load(a.track)
+    recs = prompts.load(a.track, a.version)
     rng = random.Random(CFG["seed"])
     rng.shuffle(recs)
     repeats = [dict(r, id=r["id"] + "_rep") for r in rng.sample(recs, round(len(recs) * CFG["repeat_fraction"]))]
@@ -109,6 +120,8 @@ def main():
         spent = 0.0
         for i, r in enumerate(todo, 1):
             out = call(key, m, r["system"], r["user"])
+            if out.get("error") == "daily_limit":
+                sys.exit(f"free-model daily limit reached after {i - 1} calls. Finished answers are saved; rerun tomorrow.")
             out |= {"id": r["id"], "model": m["id"], "track": a.track}
             p = _path(a.track, m["id"], r["id"])
             p.parent.mkdir(parents=True, exist_ok=True)
@@ -127,7 +140,7 @@ def _done(p: Path) -> bool:
 
 
 def _path(track, model, pid) -> Path:
-    return RESULTS / f"track{track}" / model.replace("/", "_") / f"{pid}.json"
+    return RESULTS / f"track{track}" / model.replace("/", "_").replace(":", "_") / f"{pid}.json"
 
 
 if __name__ == "__main__":

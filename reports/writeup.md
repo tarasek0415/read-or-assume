@@ -29,7 +29,9 @@ All grading is code against known truth. No model judges anything.
 - Models: Claude Opus 5.5 and Gemini 4 Argon on everything; Muse Wonder on track 2, 450 of
   the 652 track 1 calls and 100 of the 360 track 3 calls (thinking tokens made it ~10x the
   price per call). Claude Fable 5.1, GPT-6 Astra and Claude Haiku 5.5: 20-call samples only.
-- Total spend: about $21 on OpenRouter for v1, $1.42 for the v2 track 2 rerun.
+- Open-weight models on track 2 (v2): Nemotron 3 Ultra and Nemotron 3.5 Super, through
+  OpenRouter's free tier, thinking off.
+- Total spend: $22.19 on OpenRouter (see Cost). The open-weight runs cost nothing.
 
 ## Results
 
@@ -111,6 +113,30 @@ same as v1, so the two runs compare directly.
 - The benchmark caught its own confound: stating the season let the models answer from
   memory, and the counterfactual design showed how much.
 
+### Track 2 (v2), open-weight models: the name changes facts, not just judgments
+
+Same 96 prompts, run on free open-weight models.
+
+| | Nemotron 3 Ultra | Nemotron 3.5 Super | closed models (above) |
+|---|---|---|---|
+| accuracy on 8 yes/no questions, "Team K" | 1.00 | 0.89 [0.85, 0.94] | 1.00 |
+| flip rate, big-club name | 0.10 [0.06, 0.15] | 0.11 [0.06, 0.15] | 0.00 |
+| flip rate, small-club name | 0.00 | 0.16 [0.10, 0.21] | 0.00 |
+| predicted-finish error, "Team K" (places) | 3.1 [2.0, 4.2] | 3.0 [2.0, 4.2] | 1.7-2.5 |
+| shift in predicted finish, big-club name | **-5.9 [-8.7, -3.3]** | -1.5 [-3.1, 0.2] | -0.5 to -1.3 |
+| shift in predicted finish, small-club name | +2.1 [-0.7, 5.0] | +1.1 [-0.5, 2.5] | +0.7 to +2.1 |
+| leakage (named the club from "Team K") | 0.05 [0.00, 0.15] | 0.05 [0.00, 0.15] | 0.00-0.10 |
+| self-agreement (16 repeats) | 0.94 [0.81, 1.00] | 0.94 [0.81, 1.00] | 0.50-0.81 |
+
+- The closed models never changed a factual answer when only the club name changed. Both
+  open models did, on 10-16% of questions whose answer is fixed by the numbers.
+- Nemotron 3 Ultra moved a big-club team up about six places, with the season already
+  removed. That is the v1 effect size again, now from the name alone.
+- Both open models were *more* self-consistent than the closed ones (0.94 vs 0.50-0.81).
+  Consistent is not the same as right: they repeat the same name-driven answer.
+- Gemma 4 31B was also tried but the free tier was rate-limited upstream for almost every
+  call, so it has no usable results.
+
 ### Track 3: planted errors are a solved problem for the top models
 
 | | Opus 5.5 | Gemini 4 | Muse Wonder (100) |
@@ -143,6 +169,9 @@ same as v1, so the two runs compare directly.
    needed to tell the two apart.
 4. Anonymisation of a famous season is leaky, and stating the season makes it much worse.
    Team leakage fell from 55-75% to 0-10% when the season was dropped from the prompt.
+5. The gap between models shows up in the hint, not the facts. With neutral names every
+   model answers the factual questions well; with a famous name, the open models start
+   changing facts and one moves its predicted finish by six places.
 
 ## Limits
 
@@ -158,6 +187,45 @@ same as v1, so the two runs compare directly.
 - Position truth is the lineup position, which is itself a label; a false 9 or inverted
   full-back is scored by the team sheet, not by how they played.
 - Fable, Astra and Haiku numbers are 20-call samples and are not comparable.
+
+## Cost
+
+The whole study ran on a personal budget, so cost shaped the design.
+
+| Model | Calls | Spend | per call |
+|---|---|---|---|
+| Claude Opus 5.5 | 1,204 | $9.27 | $0.008 |
+| Muse Wonder | 742 | $8.39 | $0.011 |
+| Gemini 4 Argon | 1,204 | $2.47 | $0.002 |
+| Claude Fable 5.1 (sample) | 60 | $1.11 | $0.019 |
+| GPT-6 Astra (sample) | 60 | $0.94 | $0.016 |
+| Claude Haiku 5.5 (sample) | 60 | $0.01 | <$0.001 |
+| Nemotron 3 Ultra, Nemotron 3.5 Super (free tier) | 192 | $0.00 | $0 |
+| **Total** | | **$22.19** | |
+
+- A full run of all six closed models on all three tracks would have cost about $65. The
+  design spent where the result was decided: two cheap-per-call models on everything, the
+  expensive thinking model where it mattered, 20-call samples for the rest.
+- Guards in `run.py`: `--estimate` prints the cost before anything runs, every paid batch
+  asks y/N, a hard cap ($20) stops a run, and answers are cached so a rerun never pays twice.
+- Muse Wonder spent ~10x the tokens per call on thinking, which is why it is partial on
+  tracks 1 and 3. Cheaper per token is not cheaper per answer.
+- Free open-weight tiers cost nothing but allow ~20 calls a minute and ~1,000 a day, so a
+  full open-model run takes days, and one provider (Gemma) was unusable on the free tier.
+
+## Future scope
+
+- **A correct-hint control everywhere.** Track 1 shows a model can "resist" a false label by
+  reflex. Every track should pair the false hint with a true one.
+- **Less memory, more reading.** A post-cutoff season or a less-covered league (StatsBomb
+  also has women's and international competitions) to separate reading from recall.
+- **Rerun tracks 1 and 3 without the season,** and run the open models on them as free
+  quotas allow.
+- **Harder integrity plants** (subtler coordinates, two plants, longer excerpts) so track 3
+  separates models again.
+- **Full reasoning effort** on a subset, to test whether thinking budget changes how much
+  the hint leaks in.
+- **Open models on paid providers** (DeepSeek, Gemma) for a fuller open-vs-closed picture.
 
 ## Reproduce
 

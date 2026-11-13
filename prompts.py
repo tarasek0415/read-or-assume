@@ -180,8 +180,9 @@ def build_all():
         print(f"track {n}: {len(recs)} prompts")
 
 
-def load(track: int) -> list[dict]:
-    return [json.loads(l) for l in open(OUT / f"track{track}.jsonl")]
+def load(track: int, version: str | None = None) -> list[dict]:
+    folder = OUT.parent / version if version else OUT
+    return [json.loads(l) for l in open(folder / f"track{track}.jsonl")]
 
 
 if __name__ == "__main__":

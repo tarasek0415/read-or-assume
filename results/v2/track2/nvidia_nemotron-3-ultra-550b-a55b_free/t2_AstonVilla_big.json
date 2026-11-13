@@ -1,0 +1,29 @@
+{
+ "text": "{\n  \"possession_above_avg\": \"no\",\n  \"shots_for_above_avg\": \"no\",\n  \"shots_against_below_avg\": \"no\",\n  \"xg_for_above_avg\": \"no\",\n  \"xg_against_below_avg\": \"no\",\n  \"presses_higher\": \"no\",\n  \"ppda_more_aggressive\": \"no\",\n  \"positive_xg_diff\": \"no\",\n  \"predicted_finish\": 8\n}",
+ "usage": {
+  "prompt_tokens": 470,
+  "completion_tokens": 105,
+  "total_tokens": 575,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t2_AstonVilla_big",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "track": 2
+}

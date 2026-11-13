@@ -1,0 +1,29 @@
+{
+ "text": "{\n  \"possession_above_avg\": \"yes\",\n  \"shots_for_above_avg\": \"yes\",\n  \"shots_against_below_avg\": \"yes\",\n  \"xg_for_above_avg\": \"yes\",\n  \"xg_against_below_avg\": \"yes\",\n  \"presses_higher\": \"yes\",\n  \"ppda_more_aggressive\": \"yes\",\n  \"positive_xg_diff\": \"yes\",\n  \"predicted_finish\": 1\n}",
+ "usage": {
+  "prompt_tokens": 470,
+  "completion_tokens": 105,
+  "total_tokens": 575,
+  "cost": 0,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0,
+   "upstream_inference_prompt_cost": 0,
+   "upstream_inference_completions_cost": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "id": "t2_Liverpool_neutral",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+ "track": 2
+}

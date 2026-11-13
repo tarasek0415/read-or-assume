@@ -24,6 +24,12 @@ HEADLINES = {  # track -> metrics worth a chart (name, label)
 
 
 def main():
+    global VERSION, OUT
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--version", default=VERSION, help="result folder, e.g. v1 or v2")
+    VERSION = ap.parse_args().version
+    OUT = ROOT / "reports" / VERSION
     scores = json.loads((ROOT / "results" / VERSION / "scores.json").read_text())
     OUT.mkdir(parents=True, exist_ok=True)
     md = ["# read-or-assume results\n", f"Data: StatsBomb open data, Premier League 2015/16. Version {VERSION}. "

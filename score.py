@@ -165,11 +165,17 @@ def track3(ans, recs):
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--version", default=prompts.CFG["version"], help="result folder, e.g. v1 or v2")
+    version = ap.parse_args().version
+    global RESULTS
+    RESULTS = RESULTS.parent / version
     scores = {}
     for t, fn in [(1, track1), (2, track2), (3, track3)]:
         if not (RESULTS / f"track{t}").exists():
             continue
-        recs = prompts.load(t)
+        recs = prompts.load(t, version)
         for model, ans in load_answers(t).items():
             scores[f"track{t}/{model}"] = common(t, ans, recs) | fn(ans, recs)
     (RESULTS / "scores.json").write_text(json.dumps(scores, indent=1))
